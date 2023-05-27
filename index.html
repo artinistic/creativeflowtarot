@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
         
-        </head>
-        <body>
+    </head>
+    <body>
+        <div class="twinkling-stars"></div>
             <header>
                 <nav>
                     <button id="homepage" class="homepage">   
@@ -20,11 +21,14 @@
                 </nav>
             </header>
 
-            <main>   
-                <div class="intro-banner">
-                        <div class="introimage">
-                            <img src="/TarotCardBacking_largeweb.jpg"></div>
-                        <div class="introcontent">
+    <main>   
+        
+
+        <div class="intro-banner" id="intro">
+            <div class="introimage">
+                            <img src="/TarotCardBacking_largeweb.jpg">
+            </div>
+            <div class="introcontent">
                             <div class="title">
                                 <img src="Group_260.png">
                                 <div class="h1"><h1>Creative<br> Flow Tarot</h1>
@@ -34,660 +38,1247 @@
                             </p>
                             <button id="about" class="about"><a href="https://mightybeautifulartstudio.com/tarotandthecreativeflow">ABOUT THE DECK</a></button>
                             </div>
-                        </div>
-                        </div>
-
+            </div>
+        </div>
               
-    <div class="tarotdeck" id="section1">
-                        <div class="fliptarotcard" id="aceofswords">
-                                <div class="flip-card-inner">
-                                <div class="flip-card-front">
+        <div class="tarotdeckhover" id="section1">        
+            <div class="hovercards-container">
+                <div class="overlaybutton">
+                    <button class="flipDeck" button id="flipDeck"><a href="#section2">Flip the Deck</a></button>
+                </div>
+                <div class="tarotcardshover">
+                    <div class="hovertarotcard" id="aceofswordshover">
+                                <div class="hover-card-inner">
+                                <div class="hover-card-front">
                                     <img src="/Web/aceofswords.jpg" alt="Ace of Swords" style="width:400px;height:600px;"></div>
-                                <div class="flip-card-back"></div>
+                                <div class="hover-card-back"></div>
                                 </div>
-                        </div>
-                        <div class="fliptarotcard" id="twoofswords">
-                                    <div class="flip-card-inner">
-                                    <div class="flip-card-front">
+                    </div>
+                    <div class="hovertarotcard" id="twoofswordsshover">
+                                    <div class="hover-card-inner">
+                                    <div class="hover-card-front">
                                         <img src="/Web/TwoofSwords.jpg" alt="Two of Swords" style="width:400px;height:600px;"></div>
-                                    <div class="flip-card-back"></div>
+                                    <div class="hover-card-back"></div>
                                     </div>
-                        </div>
-                        <div class="fliptarotcard" id="threeofswords">
-                                <div class="flip-card-inner">
-                                <div class="flip-card-front"><img src="/Web/threeofSwords.jpg" alt="Three of Swords" style="width:400px;height:600px;"></div>
-                                <div class="flip-card-back"></div>
+                    </div>
+                    <div class="hovertarotcard" id="threeofswordsshover">
+                                <div class="hover-card-inner">
+                                <div class="hover-card-front"><img src="/Web/threeofSwords.jpg" alt="Three of Swords" style="width:400px;height:600px;"></div>
+                                <div class="hover-card-back"></div>
                                 </div>
-                        </div>
-
-                        <div class="fliptarotcard" id="fourofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/fourofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="fourofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/fourofSwords.jpg" 
                                 alt="Four of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="fiveofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/fiveofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="fiveofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/fiveofSwords.jpg" 
                                 alt="Five of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="sixofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/sixofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="sixofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/sixofSwords.jpg" 
                                 alt="Six of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="sevenofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/sevenofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="sevenofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/sevenofSwords.jpg" 
                                 alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="eightofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/eightofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="eightofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/eightofSwords.jpg" 
                                 alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="nineofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/nineofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="nineofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/nineofSwords.jpg" 
                                 alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-
-                        <div class="fliptarotcard" id="tenofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/tenofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="tenofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/tenofSwords.jpg" 
                                 alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-
-                        <div class="fliptarotcard" id="knightofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/knightofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="knightofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/knightofSwords.jpg" 
                                 alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="spiritofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/spiritofSwords.jpg" 
+                    </div>
+                    <div class="hovertarotcard" id="spiritofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/spiritofSwords.jpg" 
                                 alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="goddessofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/goddessofSwords.jpg"
+                    </div>
+                    <div class="hovertarotcard" id="goddessofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/goddessofSwords.jpg"
                                  alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
+                            <div class="hover-card-back"></div>
                             </div>
-                        </div>
-                        <div class="fliptarotcard" id="godofswords">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/godofSwords.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="aceofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/aceofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="twoofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/twoofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="threeofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/threeofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="fourofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/fourofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="fiveofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/fiveofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="sixofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/sixofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="sevenofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/sevenofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="eightofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/eightofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-                        <div class="fliptarotcard" id="nineofwands">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front"><img src="/Web/nineofwands.jpg" 
-                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
-                            <div class="flip-card-back"></div>
-                            </div>
-                        </div>
-
-                    <div class="overlaybutton">
-                        <button class="FocusYourEnergy" button id="FocusYourEnergy"><a href="#section2">Flip the Deck</a></button>
                     </div>
-    </div>
-
-    <div class="flipscene" id="section2">
-        <div class="tarotcardflipped" id="aceofswordsflipped">
-                <div class="flip-card-inner-flipped">
-                    <div class="flip-card-front-flipped">
-                        <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                    <div class="hovertarotcard" id="godofswordsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/godofSwords.jpg" 
+                                alt="Seven of Swords" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
                     </div>
-                    <div class="flip-card-back-flipped">
-                        <img src="/Web/aceofswords.jpg" alt="Ace of Swords" style="width:200px;height:300px">
-                    </div>    
+                    <div class="hovertarotcard" id="aceofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/aceofwands.jpg" 
+                                alt="Ace of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="twoofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/twoofwands.jpg" 
+                                alt="Two of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="threeofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/threeofwands.jpg" 
+                                alt="Three of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="fourofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/fourofwands.jpg" 
+                                alt="Four of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="fiveofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/fiveofwands.jpg" 
+                                alt="Five of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="sixofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/sixofwands.jpg" 
+                                alt="Six of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="sevenofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/sevenofwands.jpg" 
+                                alt="Seven of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="eightofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/eightofwands.jpg" 
+                                alt="Eight of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="nineofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/nineofwands.jpg" 
+                                alt="Nine of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="tenofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/tenofwands.jpg" 
+                                alt="ten of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="spiritofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/spiritofwands.jpg" 
+                                alt="spirit of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="knightofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/knightofwands.jpg" 
+                                alt="Knight of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="goddessofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/goddessofwands.jpg" 
+                                alt="Goddess of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
+                    <div class="hovertarotcard" id="godofwandsshover">
+                            <div class="hover-card-inner">
+                            <div class="hover-card-front"><img src="/Web/godofwands.jpg" 
+                                alt="God of Wands" style="width:400px;height:600px;"></div>
+                            <div class="hover-card-back"></div>
+                            </div>
+                    </div>
                 </div>
-        </div>
-        <div class="tarotcardflipped" id="twoofswordsflipped">
-                    <div class="flip-card-inner-flipped">
-                        <div class="flip-card-front">
-                        <img src="/Web/TwoofSwords.jpg" alt="Two of Swords" style="width:200px;height:300px;"></div>
-                        <div class="flip-card-back"></div>
-                    </div>
-        </div>
-        <div class="tarotcardflipped" id="threeofswordsflipped">
-                <div class="flip-card-inner-flipped">
-                <div class="flip-card-front"><img src="/Web/threeofSwords.jpg" alt="Three of Swords" style="width:200px;height:300px;"></div>
-                <div class="flip-card-back"></div>
-                </div>
-        </div>
-
-        <div class="tarotcardflipped" id="fourofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/fourofSwords.jpg" alt="Four of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="fiveofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/fiveofSwords.jpg" alt="Five of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="sixofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/sixofSwords.jpg" alt="Six of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="sevenofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/sevenofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="eightofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/eightofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="nineofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/nineofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-
-        <div class="tarotcardflipped" id="tenofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/tenofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-
-        <div class="tarotcardflipped" id="knightofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/knightofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="spiritofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/spiritofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="goddessofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/goddessofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="godofswordsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/godofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="aceofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/aceofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="twoofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/twoofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="threeofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/threeofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="fourofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/fourofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="fiveofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/fiveofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="sixofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/sixofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="sevenofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/sevenofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="eightofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/eightofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-        <div class="tarotcardflipped" id="nineofwandsflipped">
-            <div class="flip-card-inner-flipped">
-            <div class="flip-card-front"><img src="/Web/nineofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-            <div class="flip-card-back"></div>
-            </div>
-        </div>
-
-    <div class="overlaybutton">
-        <button class="shuffleDeck" button id="shuffleDeck"><a href="#section3">Focus Your Energy</a></button>
-    </div>
-    </div>
-</div>     
-
-<div class="shufflescene" id="section3">
-    <div class="tarotcardmoving" id="aceofswordsmoving" data-animation="once">
-        <div class="flip-card-inner-moving">
-            <div class="flip-card-front-flipped">
-                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
-            </div>
-            <div class="flip-card-back-flipped">
-                <img src="/Web/aceofswords.jpg" alt="Ace of Swords" style="width:200px;height:300px">
             </div>    
         </div>
-</div>
-<div class="tarotcardmoving" id="twoofswordsmoving"  data-animation="once">
-            <div class="flip-card-inner-moving">
-                <div class="flip-card-front">
-                <img src="/Web/TwoofSwords.jpg" alt="Two of Swords" style="width:200px;height:300px;"></div>
-                <div class="flip-card-back"></div>
-            </div>
-</div>
-<div class="tarotcardmoving" id="threeofswordsmoving" data-animation="once">
-        <div class="flip-card-inner-moving">
-        <div class="flip-card-front"><img src="/Web/threeofSwords.jpg" alt="Three of Swords" style="width:200px;height:300px;"></div>
-        <div class="flip-card-back"></div>
-        </div>
-</div>
 
-<div class="tarotcardmoving" id="fourofswordsmoving"  data-animation="once">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/fourofSwords.jpg" alt="Four of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="fiveofswordsmoving"  data-animation="once">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/fiveofSwords.jpg" alt="Five of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="sixofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/sixofSwords.jpg" alt="Six of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="sevenofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/sevenofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="eightofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/eightofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="nineofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/nineofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-
-<div class="tarotcardmoving" id="tenofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/tenofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-
-<div class="tarotcardmoving" id="knightofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/knightofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="spiritofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/spiritofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="goddessofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/goddessofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="godofswordsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/godofSwords.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="aceofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/aceofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="twoofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/twoofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="threeofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/threeofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="fourofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/fourofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="fiveofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/fiveofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="sixofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/sixofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="sevenofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/sevenofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="eightofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/eightofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-<div class="tarotcardmoving" id="nineofwandsmoving">
-    <div class="flip-card-inner-moving">
-    <div class="flip-card-front"><img src="/Web/nineofwands.jpg" alt="Seven of Swords" style="width:200px;height:300px;"></div>
-    <div class="flip-card-back"></div>
-    </div>
-</div>
-
-
-
-<div class="overlaybutton">
-
-    <button class="drawCard" button id="drawCard"><a href="#section4">Tap Here to Draw Card</a></button><br>
-    <button class="shuffle" button id="shuffle" type="button">Hover to Shuffle Cards</button>
-</div>
-</div>
-</div>     
-
-<div class="DeckShuffled" id="section4">
-
-    <div class="overlaybutton">
-        <button class="DisplayReading" button id="DisplayReading"><a href="#display">Display Reading</a></button>
-    </div>
-    <div class="display" id="display"></div>
-    <div class="displayname" id="displayName"></div>
-    <script src="index.js"></script>
-
-    <div class="tarotcardshuffled" id="aceofswordsshuffled">
-            <div class="flip-card-inner-shuffled">
-                <div class="flip-card-front-shuffled">
-                    <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:400px;height:600px">
+        <div class="flipscene" id="section2">
+            <div class="flippedcards-container">
+                <div class="tarotcardsflipped">
+                    <div class="tarotcardflipped" id="aceofswordsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/aceofswords.jpg" alt="Ace of Swords" style="width:200px;height:300px">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="tarotcardflipped" id="twoofswordsflipped">
+                        <div class="flip-card-inner-flipped">
+                                <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                                </div>
+                                <div class="flip-card-back-flipped">
+                                <img src="/Web/twoofswords.jpg" alt="two of Swords" style="width:200px;height:300px">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="threeofswordsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                                </div>
+                                <div class="flip-card-back-flipped">
+                                <img src="/Web/threeofswords.jpg" alt="Three of Swords" style="width:200px;height:300px">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="fourofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/fourofswords.jpg" alt="Four of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="fiveofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/fiveofswords.jpg" alt="Five of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="sixofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/sixofswords.jpg" alt="Six of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="sevenofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/sevenofswords.jpg" alt="Seven of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="eightofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/eightofswords.jpg" alt="Eight of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="nineofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/nineofswords.jpg" alt="Nine of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="tenofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/tenofswords.jpg" alt="Ten of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="knightofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/spiritofswords.jpg" alt="Spirit of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="spiritofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/knightofswords.jpg" alt="Knight of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="goddessofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/goddessofswords.jpg" alt="Goddess of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="godofswordsflipped">
+                    <div class="flip-card-inner-flipped">
+                        <div class="flip-card-front-flipped">
+                            <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                            <img src="/Web/godofswords.jpg" alt="God of Swords" style="width:200px;height:300px">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tarotcardflipped" id="aceofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/aceofwands.jpg" alt="Ace of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="twoofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/twoofwands.jpg" alt="Two of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="threeofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/threeofwands.jpg" alt="Three of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="fourofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/fourofwands.jpg" alt="Four of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="fiveofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/fiveofwands.jpg" alt="Five of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="sixofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/sixofwands.jpg" alt="Six of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="sevenofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/sevenofwands.jpg" alt="Seven of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="eightofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/eightofwands.jpg" alt="Eight of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="nineofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/nineofwands.jpg" alt="Nine of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="tenofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/tenofwands.jpg" alt="Ten of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="spiritofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/spiritofwands.jpg" alt="Spirit of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="knightofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/knightofwands.jpg" alt="knight of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="goddessofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/goddessofwands.jpg" alt="Goddess of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarotcardflipped" id="godofwandsflipped">
+                        <div class="flip-card-inner-flipped">
+                            <div class="flip-card-front-flipped">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="flip-card-back-flipped">
+                                <img src="/Web/godofwands.jpg" alt="God of Wands" style="width:200px;height:300px">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flip-card-back-shuffled">
-                    <img src="/Web/aceofswords.jpg" alt="Ace of Swords" style="width:400px;height:600px">
-                </div>    
-            </div>
-    </div>
-    <div class="tarotcardshuffled" id="twoofswordsshuffled">
-                <div class="flip-card-inner-shuffled">
-                    <div class="flip-card-front-shuffled">
-                    <img src="/Web/TwoofSwords.jpg" alt="Two of Swords" style="width:400px;height:600px;"></div>
-                    <div class="flip-card-back-shuffled"></div>
+                <div class="overlaybutton">
+                <button class="FocusYourEnergy" button id="FocusYourEnergy"><a href="#section3">Focus Your Energy</a></button>
                 </div>
-    </div>
-    <div class="tarotcardshuffled" id="threeofswordsshuffled">
-            <div class="flip-card-inner-shuffled">
-            <div class="flip-card-front-shuffled"><img src="/Web/threeofSwords.jpg" alt="Three of Swords" style="width:400px;height:600px;"></div>
-            <div class="flip-card-back-shuffled"></div>
             </div>
-    </div>
+        </div>    
 
-    <div class="tarotcardshuffled" id="fourofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front"><img src="/Web/fourofSwords.jpg" alt="Four of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back"></div>
+        <div class="shufflescene" id="section3">
+            <div class="shufflesceneheader">
+                <button class="shuffleButton" button id="shuffleButton">Shuffle Cards</button>
+                <button class="gatherButton" button id="gatherButton">Gather Cards</button>
+                <div class="shuffleDescription">Shuffle the deck as much as you want, then click on the card <br>you want to select, or Gather and spread the cards to select one.</h2>
+                </div>
+            </div>
+            <div class="tarotcardshuffle-container">
+                <div class="tarotcardshuffle-Cards">
+                    <div class="tarotcardshuffle" id="aceofswordsshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#aceofswordsreading" ><img src="/Web/aceofswords.jpg" alt="Ace of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>  
+                    <div class="tarotcardshuffle" id="twoofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#twoofswordsreading" ><img src="/Web/twoofswords.jpg" alt="Two of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="threeofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#threeofswordsreading" ><img src="/Web/threeofswords.jpg" alt="Three of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="fourofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#fourofswordsreading" ><img src="/Web/fourofswords.jpg" alt="Four of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="tarotcardshuffle" id="fiveofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#fiveofswordsreading" ><img src="/Web/fiveofswords.jpg" alt="Five of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="sixofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#sixofswordsreading" ><img src="/Web/sixofswords.jpg" alt="Six of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="sevenofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#sevenofswordsreading" ><img src="/Web/sevenofswords.jpg" alt="Seven of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="eightofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#eightofswordsreading" ><img src="/Web/eightofswords.jpg" alt="Eight of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="nineofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#nineofswordsreading" ><img src="/Web/nineofswords.jpg" alt="Nine of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="tenofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#tenofswordsreading" ><img src="/Web/tenofswords.jpg" alt="Ten of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="spiritofswordshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#spiritofswordsreading" ><img src="/Web/spiritofswords.jpg" alt="Spirit of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="knightofswordshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#knightofswordsreading" ><img src="/Web/knightofswords.jpg" alt="Knight of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="goddessofswordshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#goddessofswordsreading" ><img src="/Web/goddessofswords.jpg" alt="Goddess of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="godofswordshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#godofswordsreading" ><img src="/Web/godofswords.jpg" alt="God of Swords" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="aceofwandsshuffled" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#aceofwandsreading" ><img src="/Web/aceofwands.jpg" alt="Ace of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>   
+                    <div class="tarotcardshuffle" id="twoofwandsshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#twoofwandsreading" ><img src="/Web/twoofwands.jpg" alt="Two of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="threeofwandsshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#threeofwandsreading" ><img src="/Web/threeofwands.jpg" alt="Three of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="fourofwandshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#fourofwandsreading" ><img src="/Web/fourofwands.jpg" alt="Four of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="fiveofwandshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#fiveofwandsreading" ><img src="/Web/fiveofwands.jpg" alt="Five of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="sixofwandshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#sixofwandsreading" ><img src="/Web/sixofwands.jpg" alt="Six of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="sevenofwandshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#sevenofwandsreading" ><img src="/Web/sevenofwands.jpg" alt="Seven of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="eightofwandshuffle" data-translate-z="0" >
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#eightofwandsreading" ><img src="/Web/eightofwands.jpg" alt="Eight of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="nineofwandshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#nineofwandsreading" ><img src="/Web/nineofwands.jpg" alt="Nine of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="tenofwandshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#tenofwandsreading" ><img src="/Web/tenofwands.jpg" alt="Ten of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="spiritofwandsshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#spiritofwandsreading" ><img src="/Web/spiritofwands.jpg" alt="Spirit of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="knightofwandsshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#knightofwandsreading" ><img src="/Web/knightofwands.jpg" alt="Knight of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="goddessofwandsshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#goddessofwandsreading" ><img src="/Web/goddessofwands.jpg" alt="Goddess of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tarotcardshuffle" id="godofwandsshuffle" data-translate-z="0">
+                        <div class="shuffle-card-inner-shuffled">
+                            <div class="shuffle-card-front-shuffled">
+                                <img src="TarotCardBacking_backwards.jpg" alt="Creative Flow Tarot" style="width:200px;height:300px">
+                            </div>
+                            <div class="shuffle-card-back-shuffle">
+                                <a href="#Godofwandsreading" ><img src="/Web/Godofwands.jpg" alt="God of Wands" style="width:200px;height:300px"></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="tarotcardshuffled" id="fiveofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front"><img src="/Web/fiveofSwords.jpg" alt="Five of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="sixofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/sixofSwords.jpg" alt="Six of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="sevenofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/sevenofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="eightofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/eightofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="nineofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/nineofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
 
-    <div class="tarotcardshuffled" id="tenofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/tenofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
+        <div class="readingsCard" id="aceofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/aceofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Ace of Swords
+                </div>
+                <div class="description">
+                    The Magic Mushroom card is about new creative beginnings. Something in the air is stirring. A storm is brewing, and it’s about to pour rain. You’ve had a project you wanted to work on for a long time sitting in the back of your mind; maybe something you’ve even forgotten about. But now is the time to water those seeds again. The Ace of Swords represents a new energy and a significant breakthrough. You’ll figure out how to finish a project long ago put on hold. It will require you to learn a new skill, but the challenge will be worthwhile. Your biggest creative block lie in a hesitancy to share your idea and get feedback from others; perhaps you’ve got too many unfinished projects already and you’re afraid to talk about them for fear that others will hold you accountable for not finishing. But there is no timeline for creativity; some projects can percolate for years before lightning strikes. Discuss your projects with people who ask how you’re doing; spend some time defining and planning your project.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
         </div>
-    </div>
 
-    <div class="tarotcardshuffled" id="knightofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/knightofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
+        <div class="readingsCard" id="twoofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/twoofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Two of Swords
+                </div>
+                <div class="description">
+                    The Book of Creativity card is about finding balance within your creative knowledge and pursuits. Perhaps you’ve been too focused on something that does not suit you, or overly focused on the thing that pleases you the most; either option leads to imbalance and an eventual impasse. Try to adjust your routine so that you’re spending time both inside your comfort zone and outside of it; for every hour you spend doing the thing you love doing the most spend 20-30 minutes doing the thing you hate doing the most but that must still be done. Your biggest creative block may come from procrastinating on something that must be done; do it, and reward yourself appropriately.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
         </div>
-    </div>
-    <div class="tarotcardshuffled" id="spiritofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/spiritofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
+        
+        <div class="readingsCard" id="threeofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/threeofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Three of Swords
+                </div>
+                <div class="description">
+                    The Unity card is about finding creative unity and emotional release. Your biggest creative block may come from negative self-talk, someone close to you who said something that hurt your feelings or directly hit your creative spirit, recent heartbreak, grief, sorrow or other emotions that you’ve been avoiding or otherwise unable to process. Now is the time. Join a new group or become more active in a group you’ve been lurking on the outskirts of; make new friends and allow yourself the gift of vulnerability. Find a safe space to express your feelings, and do so without shame. Howl at the moon, cry, scream - whatever it takes to feel a release, let your emotions flow through you, and pay attention to what your self-talk is telling you. If your self-talk is negative, demand that it be kinder. Make sure you are treating yourself wit love. Create something abstract and wild — an acrylic pouring, a spoken word poem, an interpretative dance — and share it in the most positive space available to you.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
         </div>
-    </div>
-    <div class="tarotcardshuffled" id="goddessofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/goddessofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
+        
+        <div class="readingsCard" id="fourofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/fourofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Four of Swords
+                </div>
+                <div class="description">
+                    The Hummingbird is about solitude and creating a closer connection between you and your Creator - but through open thought and meditation. Your creative block may come from trying to force yourself to flow in a way that you’re not meant to go at this time; you’re overly attempting to overly control your creative spirit instead of letting your creative spirit control you. You might need to add some form of meditation into your routine: practice some tai chi, improvise on an instrument, pick up a coloring book, create a mandela, focus on making patterns and the patterns around you. Allow your creative spirit to get into a pattern with you.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
         </div>
-    </div>
-    <div class="tarotcardshuffled" id="godofswordsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/godofSwords.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
+        
+        <div class="readingsCard" id="fiveofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/fiveofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Five of Swords
+                </div>
+                <div class="description">
+                    The Five Eagles is about war, competition and victory. Creativity is never a competition so if it’s starting to feel like one, it’s time to step back and remember why you create, what it is that drives your soul, what it is that will bring you peace and purpose. Often, this is a card about failure, acceptance and forgiveness. Your biggest creative block might lie in the comparisons you make between yourself and other people; shut that down. It could also lie in a project you’re not happy with or a fear of failure; remember that failure is necessary for success. Perhaps you should do something that you know you will most likely fail at that could be helpful to your creative pursuits but is not necessary; something that you can fail at without judging yourself for it. Try to learn to code if you’ve never coded before; take a class in glass blowing; start a novel; start something big that you might never finish. And after you’ve started and failed, if you fail, stop and get back to your other projects, remembering that failure is temporary.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
         </div>
-    </div>
-    <div class="tarotcardshuffled" id="aceofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/aceofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
+        
+        <div class="readingsCard" id="sixofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/sixofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Six of Swords
+                </div>
+                <div class="description">
+                    The Six Seagulls is about transition and change. It’s a card of growth and tying up loose ends.  You might have just wrapped up a project and are unsure of what to work on next, or hit a creative plateau on something you’ve lost interest and become stuck in. But have no fear and let the water and flow guide you. Trust your life’s current. Think of your goals. Let your causes lead the way. Do you have at least one goal that helps improve the world in some way, no matter how small? Start there, because right now in the midst of so much unknown is when you’re creating your world the most. Take some time to give back in some way and new creative projects and energy will come to you in abundance. Pick up trash in your favorite park or neighborhood, create a way to raise funds for one of your favorite organizations, or make a poster to help educate your friends about something important to you.'
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
         </div>
-    </div>
-    <div class="tarotcardshuffled" id="twoofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/twoofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="threeofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/threeofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="fourofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/fourofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="fiveofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/fiveofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="sixofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/sixofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="sevenofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/sevenofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="eightofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/eightofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-    <div class="tarotcardshuffled" id="nineofwandsshuffled">
-        <div class="flip-card-inner-shuffled">
-        <div class="flip-card-front-shuffled"><img src="/Web/nineofwands.jpg" alt="Seven of Swords" style="width:400px;height:600px;"></div>
-        <div class="flip-card-back-shuffled"></div>
-        </div>
-    </div>
-
-
-</div>
-
-
-
-</div>    
     
-    
-  
+        <div class="readingsCard" id="sevenofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/sevenofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Seven of Swords
+                </div>
+                <div class="description">
+                    The Parrot Pirate: The Seven of Swords is about the lies you tell yourself or other people that are holding you back. There is an inner struggle or grievance that your psyche is focused on but that you are afraid to express. Perhaps you are angry at yourself for some failure, feel guilt about a conversation or argument with a loved one, or have been lying about your inner well-being. This is a card about telling your truth and dealing with deceit, theft, fraud, hidden secrets. Think about the ways in which your truth or story can be shared in a way that is helpful and not harmful, and tell it in some way.  Are you telling yourself you need more than what you have when you already have plenty? Think about your mantras, the things you repeat to yourself again and again and again. Remember there are no absolutes. To help with this creative block, create something that allows your mind to wander, whether its an abstract painting of the feeling that your lie makes you carry, a poem, or a sculpture of a symbolic object - but use the creative process to tell yourself the truth about whatever situation or belief is troubling you.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
                     
-            
-            </main>
-            
-        </body>
+        <div class="readingsCard" id="eightofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/eightofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Eight of Swords
+                </div>
+                <div class="description">
+                    The Caged Bird card represents all the ways in which a person can hold themselves back: how negative self-talk imposes restrictions on what a person believes they can and can not do, and all the ways in which insecurities can be the control levers we use to hold ourselves back from the freedoms and flow we seek. A hummingbird flaps her wings, stuck in the tiny cage of her mind, fearful of leaving even though the door is open. What you must do is turn any negative thoughts that are creeping around upside down. For every negative thought that persists, create a poster based on the opposing positive thought, and repeat the positive thought throughout the process. Use these positivity posters as mantras to stay free from your cage of "I can not". 
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+    
+        <div class="readingsCard" id="nineofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/nineofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Nine of Swords
+                </div>
+                <div class="description">
+                    The Nine-Eyed Raven card represents the dark thoughts that keep you up in the middle of the night and the process of working through your fears. The Nine of Swords is the card of monsters and nightmares: of indecision, of being pulled in different directions, of the heart being pulled apart. The Canary sits frozen in its nest on a stormy, swirling night; it is not safe from its dreams, or its environment. The swords represent the anxieties and worries she is fighting. If they hit their target, these swords can become a self-fulfilling prophecy on the way to failure. To combat this creative block, spend 20 minutes on a creative meditation exercise like coloring, crocheting, drumming that allows you to stop worrying and focus solely on the repetitive motion activity at hand. And then think about the things that scare you in a more focused way: What are they? Find inspiration in on what it is you are indecisive about or fearful of. What are you choosing between? What are you afraid of losing? Create a metaphor for how having to make that choice makes you feel, or create a story for the monster that is making you choose.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+                    
+        <div class="readingsCard" id="tenofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/tenofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Ten of Swords
+                </div>
+                <div class="description">
+                    The Tragic Flamingo card represents a painful ending, a deep loss and the end of a cycle.  A flamingo lies dying in a shallow pond, struck in her head by a sword, surrounded by nine other swords and pools of blood. This is the card of grief.  But with endings come beginnings, with deep losses come new gains, and at the end of any cycles lie the unlimited possibilities that come from learning, changing and growing. The sun sparkles on the water and the Flamingo awaits her new, enlightened and transformed self. To get past this creative block, write or create a love letter or some sort of tribute for your loss that talks about what you stand to gain after the pain.'
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+                    
+        <div class="readingsCard" id="spiritofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/spiritofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Spirit of Swords
+                </div>
+                <div class="description">
+                    The Phoenix shows a great, beautiful bird rising above a lake caught on fire, controlling a powerful sword or state of knowledge akin to the enlightenment that comes from being inside a spiritual realm. This card represents renewal, new ideas and a new burst of energy after a period of rest or low flow. There is nothing that can stop you now but yourself. With so much built up energy, the biggest creative block is most likely the feeling of being overwhelmed, of not knowing exactly where to thought, or of being pulled into too many directions. Don’t write a to-do list. Write out the bigger picture. What do you need to learn to get started?
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+                    
+        <div class="readingsCard" id="knightofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/knightofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Knight of Swords
+                </div>
+                <div class="description">
+                    The Striking Owl shows an owl holding a powerful sword of knowledge, killing a snake in a stormy desert. The eagle’s wings are spread and the sword is perfectly straight, showing determination and expertise, while the owl represents an evolved knowledge capable of nearly anything. The owl will need to put all that knowledge to use to beat the coming storm, but it will be worth it when the desert blooms. The challenge here is the risk of burnout, impatience, or trying to do too much, too fast. You’re on a mission, and you need to stay focused. But sometimes focus is improved by breaking it. What have you been spending all your time on lately? Take however much time you can spare to do the opposite.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+        
+        <div class="readingsCard" id="goddessofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/goddessofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Goddess of Swords
+                </div>
+                <div class="description">
+                    The Goddess of Swords shows a beautiful woman showing off her feathers, representing the mastery of inner strength that comes from overcoming loss and personal suffering. She is a symbol of freedom, beauty and intelligence, which makes her powerful and resourceful. The Queen possesses all the knowledge, skills and instincts necessary to get through any situation and to get the truth in all matters. Her knowledge is capable of changing the world. She knows herself inside and out and is comfortable in her own skin, though she is also a master of transformation and change and is able to read which way the wind will blow. Her energy works to give everyone the insight and power they need to become fully themselves. The challenge here could be pride or ego, or a lack thereof. Share your work with others. Hear what they have to say. What does your soul have to say? What are the winds telling you?
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+        
+        <div class="readingsCard" id="godofswordsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/godofswords.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    God of Swords
+                </div>
+                <div class="description">
+                    The purveyor of enlightenment, advice and knowledge; an authority figure or higher power. The God of Swords radiates deep knowledge, truth, understanding and intuition during a search for truth, answers, meaning or purpose. Their special insight into nature and the universe allows them to see what others cannot. This is a card that asks you to reconnect with nature, the ultimate creative spirit. Your biggest creative block may come from a lack of direction; your intuition may be all over the place. Go somewhere green and quiet and talk to yourself amongst flowers and trees; or, if it’s the middle of winter, inspire yourself by reminiscing about the last beautiful place you went to. Go through old photographs, plan a future journey, imagine a conversation with a mountain and write it down.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="aceofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/aceofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Ace of Wands
+                </div>
+                <div class="description">
+                    The Magician card shows an octopus holding a wand, manifesting the beginnings of a beautiful coral reef. The is a card about inspiration and the thoughts and ideas that most excite you. You’re just getting swept up into something, which means it’s just the beginning of the ride. Stay flexible, go down those rabbit holes, take notes. You’ll know when it’s time to relax but for now, go to your favorite creative space and let loose. Don’t forget to stop and dance every so often. 
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="twoofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/twoofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Two of Wands
+                </div>
+                <div class="description">
+                    The Dragonfly shows a beautiful winged creature flying over some water lillies in a lotus pond, two wands standing motionless on both sides. This is a card representing a time for planning and meditation. The lotus pond represents a comfort zone of peace and safety, away from the stresses of the larger world. It’s a card about feeling at home but being unable to stay there forever. You were meant for great things. Go some place natural and beautiful to brew on what they are.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="threeofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/threeofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Three of Wands
+                </div>
+                <div class="description">
+                    The Sea Turtle makes their way to the ocean, lead there by the wisdom and direction of ancestors, passed along through generations by spiritual forces so strong they don’t require a physical presence to be followed. This is a card about progress, momentum, opportunities and foresight. You’re going in the right direction. Even if you don’t know where you’re going, you’ve got signs guiding you along the way.  You just have to be looking out for them, and figure out which ones to follow as you broaden your horizons and get comfortable out at sea. If you’re feeling blocked here, think about all the different kinds of signs you come across each and every day, from road signs to whatever it is the clouds are telling you. Create your own sign. What’s your soul telling you it should say?
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+
+        <div class="readingsCard" id="fourofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/fourofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Four of Wands
+                </div>
+                <div class="description">
+                    Two dolphins expertly leap through a diamond-shaped hurdle, representing the successful completion of an important step or milestone, You may not realize how much you’ve achieved already, but it’s time to have fun and celebrate your accomplishments so far. Enjoy the harmony and stability you should be feeling and find a way to reward yourself and those who have been supporting you.  Throw a party, host a game night or potluck with friends, buy some concert tickets. Laugh and let loose, and don’t keep your successes to yourself. 
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="fiveofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/fiveofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Five of Wands
+                </div>
+                <div class="description">
+                    The Narwhals card indicates an imagined or unnecessary war or competition, whether amongst friends or yourself and the negative thoughts that block your creative flow. Whatever foe you face, victory is within grasp. It may feel like you’re all fighting for the same fish, but there are plenty of fish around. A little competitive fun never hurt anyone, but creativity isn’t a zero sum game. There is balance between self-growth and self-criticism; between flow and function; between inspiration and implementation. Work on your balance to maintain your flow. Spend a day figuring out creative or kind ways to lift others up and eventually someone will return the favor.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="sixofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/sixofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Six of Wands
+                </div>
+                <div class="description">
+                    The Narwhals card indicates an imagined or unnecessary war or competition, whether amongst friends or yourself and the negative thoughts that block your creative flow. Whatever foe you face, victory is within grasp. It may feel like you’re all fighting for the same fish, but there are plenty of fish around. A little competitive fun never hurt anyone, but creativity isn’t a zero sum game. There is balance between self-growth and self-criticism; between flow and function; between inspiration and implementation. Work on your balance to maintain your flow. Spend a day figuring out creative or kind ways to lift others up and eventually someone will return the favor.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="sevenofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/sevenofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Seven of Wands
+                </div>
+                <div class="description">
+                    The Orca depicts a killer whale surrounded by sharks. The competition and stakes here is real. The sharks are fearsome physically and perhaps you’re finding yourself out-gunned in some way.  There is a lot of pressure that comes after successly finishing a creative project or goal. Some people want what you have; others are upset about what they don’t have. Either way, it feels like you’re being circled by something ominous, and you might not even realize it. It’s okay to get knocked down a little, but don’t forget about all the powers you’ve developed to get to where you are. Creativity builds resourcefulness and a unique ability to solve problems. You don’t have to out gun someone you can outsmart. There isn’t a problem that can’t be fixed.  When seen in the right light, all problems are opportunities, and you’ve got some magic on your side. If you’re having doubts, challenge yourself to a contest: Nothing too big that it distracts from where you need to be, but nothing to small that others don’t notice it. Create something that shows your progression or allows you to quickly show off your skills.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="eightofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/eightofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Eight of Wands
+                </div>
+                <div class="description">
+                    The Penguins shows a group of penguins all swimming together with the current, playing in waves, their wands of inspiration moving with them in the ocean’s flow. This is a card about motion and travel, getting from where you are to where you’re going next. There’s a lot of energy surrounding you right now but you know how to ride the wave. Stay enthusiastic. Don’t question your worthiness for any opportunities you’re surrounded by. There are wild rides to come. Allow yourself to get excited and grab ahold of new ideas, and if they aren’t coming to you naturally, get out of Dodge. Take a day trip, a weekend, a week to go somewhere new and let your adventurous spirit wander. The next thing will come to you.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="nineofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/nineofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Nine of Wands
+                </div>
+                <div class="description">
+                   The Trapped Ray depicts a radiant ray sea creature ensnared in a tangled net, embodying the challenges that accompany creative pursuits.
+                   Beneath the ray, nine wands stand, symbolizing past creative endeavors. They serve as a reminder of the strength gained through previous experiences.
+                   Despite the constraints, the ray's spirit remains unwavering. Its gaze, filled with curiosity and defiance, looks towards the vast sky, where possibilities await.
+                   The Nine of Wands urges you to embrace setbacks as catalysts for growth. Find inspiration within limitations and adapt your approach. Trust in your resilience and uncover the brilliance that lies within you.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="tenofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/tenofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Ten of Wands
+                </div>
+                <div class="description">
+                    A lizard travels determinedly across a hot beach lined with unique treasures, but must push on anyway, as they have their hands full carrying their wands across the beach. The wands magic has been momentarily extinguished. This is a card about how much you have taken on and all the ways it is weighing you down. But you are not stopping. Maybe you do not even know how to stop. Perfectionism has its downsides. The struggle here is knowing when to stop, being able to hear that feeling of completion flow across your body and mind. It does not ever seem to last long but sometimes you gotta hold on to it. It is done. Stop what you are doing for a while and do a timed exercise: Draw or color for exactly 30 minutes. And then no matter what, call it a job well done.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="spiritofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/spiritofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Spirit of Wands
+                </div>
+                <div class="description">
+                    The Magical Axolotl card shows an axolotl sea creature holding magical wand, channeling its creative energy into the manifestation of sea angels. These ethereal beings represent the manifestation of the axolotl's artistic vision, embodying the limitless possibilities that arise when creative blocks are overcome.
+
+                    The axolotl, a symbol of resilience, exemplifies the power to transcend obstacles. Its gentle yet determined nature serves as a reminder that creativity knows no bounds. Through the magic of its wand, the axolotl teaches us to tap into our inner resources to unlock our creative potential.
+                    
+                    This card invites you to harness the transformative energy of the Spirit of Wands. In times of creative stagnation, call upon your inner axolotl's resilience and wisdom. Embrace the power of your imagination and allow it to guide you towards innovative solutions and fresh perspectives.
+                    
+                    By wielding the metaphorical wand of inspiration, you can break through creative blocks and bring forth new ideas. Trust in the enchantment of your own creativity and let it illuminate the path ahead.
+                    
+                    The Spirit of Wands celebrates the triumph over creative barriers. Embrace the essence of the axolotl's magical wand, and with each flick, watch as transparent sea angels come to life. Through perseverance and the belief in your own creative prowess, you have the power to overcome any obstacle and create awe-inspiring beauty.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="knightofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/knightofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Knight of Wands
+                </div>
+                <div class="description">
+                   The Traveling Seahorse embodies creativity and the determination to overcome blocks. In this depiction, a majestic sea dragon perches atop a vibrant coral reef.
+
+                   With fiery eyes, the sea dragon gazes at the stars through a telescope, symbolizing its boundless curiosity and the quest for inspiration beyond its underwater realm.
+                   
+                   Embrace the sea dragon's audacity and venture beyond your creative comfort zone. The coral reef represents your foundation, enriched by diverse influences.
+                   
+                   Confront creative blocks with resilience. Let the sea dragon's determination guide you to explore new territories of creativity. Release doubt and restrictions.
+                   
+                   With the Knight of Wands, embrace adventure, seek inspiration, and unleash your artistic potential. Overcome blocks, discover inspiration, and leave your mark.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="goddessofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/goddessofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    Goddess of Wands
+                </div>
+                <div class="description">
+                    The Mermaid personifies creativity and the power of genuine connections. A graceful mermaid sits upon a bed of rocks, forming a serene backdrop.
+
+                    The mermaid, adorned with a vibrant tail and flowing hair, exudes an aura of confidence and warmth. She extends her hand to a friendly parrot perched beside her, illustrating the harmonious bond between different realms of existence.
+                    
+                    With an intuitive understanding, the Goddess of Wands embodies the ability to blend imagination and reality seamlessly. Her companionship with the parrot signifies the importance of embracing diverse influences and perspectives in the creative process.
+                    
+                    Find stability and strength in your creative foundation. The rocks symbolize the solid ground upon which your artistic endeavors can flourish, providing a reliable platform for your imagination to take flight. Cultivate authentic connections and nurture collaborations that enhance your creative journey. Embrace the wisdom of the mermaid and the parrot, as they symbolize the integration of intuition, intellect, and expressive communication.
+                
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+
+        <div class="readingsCard" id="godofwandsreading">
+            <div class="tarotcardreadingimage">
+                <img src="/Web/godofwands.jpg">
+            </div>
+            <div class="cardDetailsContainer">
+                <div class="readingsDescription">    
+                    God of Wands
+                </div>
+                <div class="description">
+                    The King Fish radiates creative mastery. Picture a majestic, king-like fish standing before a grand sand castle on a vibrant coral reef. With regal presence, the God of Wands embodies power and authority. His vibrant scales reflect his limitless creative potential. Through his magic, he effortlessly manifests his desires.
+                    The sand castle before him represents the boundless possibilities born from vision and mastery. It reminds you of your own ability to bring dreams to life. Embrace the God of Wands' wisdom. Exercise your power to manifest your desires. Unleash your imagination and create extraordinary works. Surrounded by the vibrant coral reef, find inspiration and nurture supportive connections. Anchor your creativity in an empowering environment. Tap into your creative mastery. Embrace your role as the architect of your reality. Use your innate gifts to shape and manifest your visions. With the God of Wands as your guide, let your imagination flourish. Weave magic into every aspect of your life and witness extraordinary transformations.
+                </div>
+                <button class="drawAnother" id="drawAnother"><a href="#section1">Draw Another Card</a></button>
+            </div>
+        </div>
+        
+        
+    </main>
+    <script src="index.js"></script>
+    </body>
 </html>
