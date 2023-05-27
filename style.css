@@ -12,10 +12,11 @@
    
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    font-weight:400;
+    font-size: 24 px;
+    font-weight:100;
     background-color: white;
     padding: 40px;
+    overflow: hidden;
 }
      
 header{   
@@ -44,9 +45,24 @@ header{
     background-color:#FF6EB6;
 }
 
+.twinkling-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+  }
 /*Introduction*/
-
-.intro-banner{
+    .intro-banner{
     background-image: url(picnictablebg.png);
     width: cover;
     background-repeat: no-repeat;
@@ -58,9 +74,9 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "a b"
-}   
+    }   
 
-.introimage{
+    .introimage{
         margin-top:20px;
         margin-left: 200px;
         height: 800px;
@@ -69,18 +85,18 @@ header{
         border-color: white;
         border-width: 10px;
         box-shadow: 30px, 30px, 30px, black;
-}
+    }
 
-.introcontent{
+    .introcontent{
         grid-area: b;
         margin-top: 30px;
         align-items: center;
-}
+    }
 
-.title {
+    .title {
     text-shadow: 10px 10px 10px grey;
-}
-.h1 {
+    }
+    .h1 {
     transform:scale(100%);
     font-size: 80px;
     color: white;
@@ -88,14 +104,15 @@ header{
     line-height: 8rem;
     margin-top:-150px;
     margin-left: -100px;
-}
+    }
 
-.h2 {
+    .h2 {
     font-size: 60px;
     color:#000000;
     font-weight: 400;
-}
-.playnow{
+    text-align: center;
+    }
+    .playnow{
         background-color:#FF6EB6;
         padding: 10px;
         margin-left: -50px;
@@ -105,9 +122,9 @@ header{
         font-size: 30px;
         color: white;
         box-shadow: 30px, 30px, 30px, black;
-}
+    }
 
-.about{
+    .about{
         background-color:#00B6CE;
         padding: 10px;
         margin-left: -50px;
@@ -117,255 +134,125 @@ header{
         font-size: 30px;
         color: white;
         box-shadow: 30px, 30px, 30px, black;
-}
-
+    }
 /*End of Introduction*/
 
 /*Start of Section1*/
 
-.tarotdeck{
+   .tarotdeckhover {
     background-image: url(picnictablebg.png);
-    width: cover;
-    height: 1200px;
+    width: 100%;
+    height: 1000px;
     background-repeat: no-repeat;
+    margin-bottom: 400px; 
     position: relative;
-    background-position-x: center;
-    background-position-y: center;
-    margin-bottom: 400px;
     display: grid;
-    grid-template-columns: 200px 220px 200px 200px 200px 200px 200px 200px;
-    grid-gap: 10px;
+    overflow:scroll;        
+    }
+
+    .hovercards-container {
     padding: 10px;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "a b c d e f g h"
-                         "i j k l m n o p"
-                         "q r s t u v w x";
-}   
+    margin-bottom: 50px;
+    width: 100%;
+    height: 90vh;
+    }
 
-.fliptarotcard{
-   width: 200px;
-   height: 300px;
-   margin: 10px;
-   perspective: 300px;
-   scale: .5;
-}
+    .tarotcardshover {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, -33%);
+    grid-auto-flow: dense;
+    grid-gap: -33%;
+    margin-bottom: 100px;
+    }
 
-.flip-card-inner{
-    position: relative;
-    height: 300px;
+    .hovertarotcard{
     width: 200px;
-    transition: .6s;
+    height: 300px;
+    perspective: 300px;
+    scale: .5;
+    transition: 1s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    opacity:100;
     background-image: url(TarotCardBacking_backwards.jpg);
-}
+    z-index: 1;
+    margin-bottom: -100px;
+        }
 
-.fliptarotcard:hover .flip-card-inner {
+    .hovertarotcard:hover {
     transform: scale(2);
-}
+    transition: transform 1s;
+    position: relative;
+    background-image: url(TarotCardBacking_smallweb.jpg);
+    z-index: 1000;
+        }
 
-#aceofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/aceofswords.jpg);
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-#twoofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/twoofswords.jpg);
-    margin-top: 10px;
-}
-
-#threeofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/threeofswords.jpg);
-    margin-top: 10px;
-}
-
-#fourofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/fourofswords.jpg);
-    margin-top: 10px;
-}
-
-#fiveofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/fiveofswords.jpg);
-    margin-top: 10px;
-}
-
-#sixofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/sixofswords.jpg);
-    margin-top: 10px;
-}
-
-#sevenofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/sevenofswords.jpg);
-    margin-top: 10px;
-    padding-right: 10px;
-}
-
-#eightofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/eightofswords.jpg);
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-#nineofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/nineofswords.jpg);
-}
-
-#tenofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/tenofswords.jpg);
-}
-
-#knightofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/knightofswords.jpg);
-}
-
-#spiritofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/spiritofswords.jpg);
-}
-
-#goddessofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/goddessofswords.jpg);
-}
-
-#godofswords:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/godofswords.jpg);
-}
-
-#aceofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/aceofwands.jpg);
-}
-
-#twoofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/twoofwands.jpg);
-}
-
-#threeofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/threeofwands.jpg);
-}
-#fourofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/fourofwands.jpg);
-}
-#fiveofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/fiveofwands.jpg);
-}
-#sixofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/sixofwands.jpg);
-}
-#sevenofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/sevenofwands.jpg);
-}
-#eightofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/eightofwands.jpg);
-}
-#nineofwands:hover {
-    position: relative;
-    z-index: 2;
-    background-image: url(Web/nineofwands.jpg);
-}
-
-.flip-card-front, .flip-card-back {
-position: absolute;
-width: 200px;
-height: 300px;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
-}
-
-.overlaybutton {
+    .overlaybutton {
     position: absolute;
-    margin-left: 50%;
+    top: 50%;
+    left: 40%;
     z-index: 300;
-    margin: 450px;
-}
+        }
 
-.FocusYourEnergy {
+    .flipDeck {
     background-color: turquoise;
-    position:relative;
     font-family: 'Josefin Sans';
     font-weight: '400';
     font-size: 30px;
     padding: 1rem;
     color: white;
     opacity: .9;
-}
-
+        }
 
 /*End of Section1*/
 
 /*Start of Section2*/
-
-.flipscene{
+.flipscene {
     background-image: url(picnictablebg.png);
-    width: cover;
+    width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
+    margin-bottom: 400px; 
     position: relative;
-    margin-bottom: 200px;
-    background-position: center;
     display: grid;
-    grid-template-columns: 200px 220px 200px 200px 200px 200px 200px 200px;
-    grid-gap: 20px;
+    overflow:scroll;        
+    }
+
+.flippedcards-container {
     padding: 10px;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "a b c d e f g h"
-                         "i j k l m n o p"
-                         "q r s t u v w x";
-}   
+    margin-bottom: 50px;
+    width: 100%;
+    height: 90vh;
+        }
+
+.tarotcardsflipped {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, -33%);
+    grid-auto-flow: dense;
+    grid-gap: -33%;
+    margin-bottom: 100px;
+            }
 
 .tarotcardflipped{
    width: 200px;
    height: 300px;
-   margin: 20px;
    perspective: 300px;
+   transition: 1s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   background-image: url(TarotCardBacking.jpg);
+   z-index: 1;
+   margin-left: 10px;
+   margin-bottom: -100px;
 }
 
 .tarotcardflipped:hover .flip-card-inner-flipped {
     transform: rotateY(360deg);
+    background-image: url(TarotCardBacking_backwards.jpg);
+    z-index: 1000;
 }
 
 .flip-card-inner-flipped{
@@ -381,14 +268,14 @@ backface-visibility: hidden;
 }
 
 .flip-card-front-flipped, .flip-card-back-flipped {
-position: absolute;
-width: 200px;
-height: 300px;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-.shuffleDeck {
+.FocusYourEnergy {
     background-color: turquoise;
     position:relative;
     font-family: 'Josefin Sans';
@@ -400,526 +287,194 @@ backface-visibility: hidden;
 }
 /*EndofSection2*/
 
-/*StartofSection3*/
+/*StartofSection3NEW*/
 
-.shufflescene{
+.shufflescene {
     background-image: url(picnictablebg.png);
-    width: 100%;
+    width: 1600px;
     height: 1000px;
     background-repeat: no-repeat;
     position: relative;
-    margin-bottom: 200px;
-    background-position: center;
     display: grid;
-    grid-template-columns: 200px 220px 200px 200px 200px 200px 200px 200px;
-    grid-gap: 20px;
-    padding: 10px;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "a b c d e f g h"
-                         "i j k l m n o p"
-                         "q r s t u v w x";
-}   
+    grid-gap: -33%;
+    overflow:scroll;        
+    }
 
-.tarotcardmoving{
-   width: 220px;
-   height: 320px;
-   margin: 20px;
-   perspective: 300px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
-   background-color:white;
-   border-radius: 25px;
+.tarotcardshuffle-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, -33%);
+    grid-auto-flow: dense;
+    grid-gap: -33%;
+    position: relative;
+    width: 90vw;
+    height: 90vh; 
+    max-width: 1400px;
+    max-height: 600px;
+    margin-top: -100px;
+    margin-left: 40px;
+  }
 
-}
+.tarotcardshuffle-Cards {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, -50%);
+    grid-auto-flow: dense;
+    grid-gap: -50%;
+    }
 
-.flip-card-inner-moving{
+.tarotcardshuffle{
+    width: 200px;
+    height: 300px;
+    perspective: 300px;
+    transition: 2s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: url(TarotCardBacking.jpg);
+    z-index: 1;
+    margin-left: 10px;;
+    }
+
+
+.shuffleactive .tarotcardshuffle-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+    }
+
+.shuffle-active .tarotcardshuffle {
+    position: absolute;
+    }
+    
+.shuffle-card-inner-shuffled{
+    position: relative;
     height: 300px;
     width: 200px;
-    display: flex;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin: 10px;
-    transition: all 4s linear;
-    background-image: url(TarotCardBacking_backwards.jpg);
-    border-radius: 25px;
-}
-
-.drawCard {
-    background-color: turquoise;
-    position: 100px 100px 600px;
-    font-family: 'Josefin Sans';
-    font-weight: '400';
-    font-size: 30px;
-    padding: 1rem;
-    margin-left: -150px;
-    color: white;
-    opacity: .9;
-    z-index: 600;
-}
-
-.shuffle {
-    background-color: turquoise;
-    position:relative;
-    font-family: 'Josefin Sans';
-    font-weight: '400';
-    font-size: 30px;
-    padding: 1rem;
-    margin-left: -150px;
-    color: white;
-    opacity: .9;
-}
-
-
-#aceofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    scale: 1;
-    animation: mymove 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #aceofswordsmoving{
-    animation-play-state: running;}
-   
-@keyframes mymove {
-    50% {translate: 670px 300px 400px};
-}
-
-#twoofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation: mymove2 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #twoofswordsmoving{
-    animation-play-state: running;}
-   
-@keyframes mymove2 {
-    50% {translate: 450px 300px 400px};
-}
-
-#threeofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation: mymove3 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #threeofswordsmoving{
-    animation-play-state: running;}
-   
-@keyframes mymove3 {
-    50% {translate: 215px 300px 400px};
-}
-
-#fourofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation: mymove4 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #fourofswordsmoving{
-    animation-play-state: running;}
-   
-
-@keyframes mymove4 {
-    50% {translate: -15px 300px 400px};
-}
-
-#fiveofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove5 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #fiveofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove5 {
-    50% {translate: -240px 300px 400px};
-}
-
-#sixofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove6 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #sixofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove6 {
-    50% {translate: -460px 300px 400px};
-}
-
-#sevenofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove7 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #sevenofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove7 {
-    50% {translate: -700px 300px 400px};
-}
-
-#eightofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove8 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #eightofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove8 {
-    50% {translate: -920px 300px 400px};
-}
-
-#nineofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove9 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #nineofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove9 {
-    50% {translate: 670px -30px 400px};
-}
-
-#tenofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove10 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #tenofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove10 {
-    50% {translate: 450px -30px 400px};
-}
-
-#knightofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove11 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #knightofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove11 {
-    50% {translate: 215px -30px 400px};
-}
-
-#spiritofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove12 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #spiritofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove12 {
-    50% {translate: -5px -30px 400px};
-}
-
-#goddessofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove13 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #goddessofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove13 {
-    50% {translate: -235px -30px 400px};
-}
-
-#godofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove14 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #godofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove14 {
-    50% {translate: -470px -30px 400px};
-}
-
-#godofswordsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove14 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #godofswordsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove14 {
-    50% {translate: -470px -30px 400px};
-}
-
-#aceofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove15 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #aceofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove15 {
-    50% {translate: -690px -30px 400px};
-}
-
-#twoofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove16 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #twoofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove16 {
-    50% {translate: -910px -30px 400px};
-}
-
-#threeofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove17 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #threeofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove17 {
-    50% {translate: 670px -350px 400px};
-}
-
-#fourofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove18 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #fourofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove18 {
-    50% {translate: 440px -350px 400px};
-}
-
-#fiveofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove19 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #fiveofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove19 {
-    50% {translate: 215px -350px 400px};
-}
-
-#sixofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove20 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #sixofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove20 {
-    50% {translate: -10px -350px 400px};
-}
-
-#sevenofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove21 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #sevenofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove21 {
-    50% {translate: -220px -350px 400px};
-}
-
-#eightofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove22 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #eightofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove22 {
-    50% {translate: -450px -350px 400px};
-}
-
-#nineofwandsmoving {
-    display: flex;
-    translate: 0 0;
-    perspective: 300px;
-    animation-play-state: paused;
-    animation: mymove23 4s infinite;
-    animation-play-state: paused;
-}
-.shufflescene:hover #nineofwandsmoving{
-    animation-play-state: running;}
-
-@keyframes mymove23 {
-    50% {translate: -680px -350px 400px};
-}
-
-
-/*EndofSection3*/
-
-/*StartofSection4*/
-
-.display {
-    width: 400px;
-    height: 600px;
-    perspective: 400px;
-    margin: 20px;
-    margin-top: 100px; 
-    position: absolute;
-    translate: 225px 10px 500px;
-
-}
-
-#displayName {
-    margin-left: 400px;
-    margin-top: 200px;
-    position: absolute;
-    border-radius: 20px;
-    background-color: white;
-    padding: 20px;
-    padding-left: 400px;
-}
-
-.DeckShuffled {
-    background-image: url(picnictablebg.png);
-    width: cover;
-    height: 1000px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 200px;
-    background-position: center;
-    display: grid;
-    grid-template-columns: 200px 220px 200px 200px 200px 200px 200px 200px;
-    grid-gap: 20px;
-    padding: 10px;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "a b c d e f g h"
-                         "i j k l m n o p"
-                         "q r s t u v w x";
-}   
-
-.tarotcardshuffled{
-    width: 400px;
-    height: 600px;
-    margin: 20px;
-    perspective: 300px;
-    position: absolute;
-    translate: 300px 100px;
-    transition: all 4s linear;
-
-}
-
-.flip-card-inner-shuffled{
-    position: absolute;
-    height: 600px;
-    width: 400px;
-    transition: .6s;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     opacity:100;
-    background-image: url(TarotCardBacking_largebackward.jpg);
+    background-image: url(TarotCardBacking_backwards.jpg);
+    }
+
+.shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+.shuffleButton {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        padding: 1rem;
+        color: white;
+        opacity: .9;
+        align-items: center;
+        margin-left: 30%;
+        margin-top: 10px;
+      }
+
+.gatherButton {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        padding: 1rem;
+        color: white;
+        opacity: .9;
+        align-items: center;
+      }
+
+
+.shuffleDescription {
+    transform:scale(100%);
+    font-size: 30px;
+    color: salmon;
+    text-shadow: 30px, 30px, 30px, black;
+    line-height: 1.4rem;
+    background-color: white;
+    padding: 10px;
+   justify-content: center;
+    padding-left: 30%;
+    font-weight: bold;
+}
+/*StartofSection4*/
+
+.readingsCard {
+    background-image: url(picnictablebg.png);
+    background-size: 1900px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 400px;
+    margin-top: 400px;
 }
 
-.flip-card-front-shuffled, .flip-card-back-shuffled {
-position: absolute;
-width: 400px;
-height: 600px;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
+.tarotcardreadingimage {
+    position: relative;
+    width: 480px;
+    height: 720px;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px gray;
 }
 
-.flip-card-back-shuffled {
-    background-image: url(TarotCardBacking_largeweb.jpg);
-    width: 400px;
-    height: 400px;
+.cardDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 100px; /* Adjust this value as needed */
 }
 
-.DisplayReading {
-    background-color: turquoise;
-    position:relative;
+.readingsDescription {
+    font-size: 60px;
+    color: purple;
+    text-shadow: 10px 10px 10px gray;
+    line-height: 8rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 350 px;
+    padding-left: 50px;
+}
+
+.description {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    text-align: left;
+    background-color: mediumaquamarine;
+    padding: 30px;
+    box-shadow: 10px 10px 10px gray;
+    margin-right: 50px;
+    background-blend-mode: screen;
+    opacity: 80%;
+}
+
+.drawAnother {
+    background-color: salmon;
+    padding: 30px;
+    margin-top: 10px; /* Adjust this value as needed */
     font-family: 'Josefin Sans';
-    font-weight: '100';
-    font-size: 16px;
-    padding: 1rem;
+    font-weight: 400;
+    font-size: 30px;
     color: white;
-    opacity: .9;
+    box-shadow: 10px 10px 10px gray;
+    margin: 50px;
 }
 
 
