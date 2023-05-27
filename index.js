@@ -1,50 +1,151 @@
-function card(name, description, image){
-    this.name = name;
-    this.description = description;
-    this.image = image;
-}
-var deck = [
-    new card ('Ace of Swords', 'ACE OF SWORDS: The Magic Mushroom card is about new creative beginnings. Something in the air is stirring. A storm is brewing, and it’s about to pour rain. You’ve had a project you wanted to work on for a long time sitting in the back of your mind; maybe something you’ve even forgotten about. But now is the time to water those seeds again. The Ace of Swords represents a new energy and a significant breakthrough. You’ll figure out how to finish a project long ago put on hold. It will require you to learn a new skill, but the challenge will be worthwhile. Your biggest creative block lie in a hesitancy to share your idea and get feedback from others; perhaps you’ve got too many unfinished projects already and you’re afraid to talk about them for fear that others will hold you accountable for not finishing. But there is no timeline for creativity; some projects can percolate for years before lightning strikes. Discuss your projects with people who ask how you’re doing; spend some time defining and planning your project.', 'aceofswords'),
-    new card ('Two of Swords', 'TWO OF SWORDS: The Book of Creativity card is about finding balance within your creative knowledge and pursuits. Perhaps you’ve been too focused on something that does not suit you, or overly focused on the thing that pleases you the most; either option leads to imbalance and an eventual impasse. Try to adjust your routine so that you’re spending time both inside your comfort zone and outside of it; for every hour you spend doing the thing you love doing the most spend 20-30 minutes doing the thing you hate doing the most but that must still be done. Your biggest creative block may come from procrastinating on something that must be done; do it, and reward yourself appropriately.' , 'twoofswords'),
-    new card ('Three of Swords', 'THREE OF SWORDS: The Unity card is about finding creative unity and emotional release. Your biggest creative block may come from negative self-talk, someone close to you who said something that hurt your feelings or directly hit your creative spirit, recent heartbreak, grief, sorrow or other emotions that you’ve been avoiding or otherwise unable to process. Now is the time. Join a new group or become more active in a group you’ve been lurking on the outskirts of; make new friends and allow yourself the gift of vulnerability. Find a safe space to express your feelings, and do so without shame. Howl at the moon, cry, scream - whatever it takes to feel a release, let your emotions flow through you, and pay attention to what your self-talk is telling you. If your self-talk is negative, demand that it be kinder. Make sure you are treating yourself wit love. Create something abstract and wild — an acrylic pouring, a spoken word poem, an interpretative dance — and share it in the most positive space available to you.' , 'threeofswords'),
-    new card ('Four of Swords', 'FOUR OF SWORDS: The Hummingbird is about solitude and creating a closer connection between you and your Creator - but through open thought and meditation. Your creative block may come from trying to force yourself to flow in a way that you’re not meant to go at this time; you’re overly attempting to overly control your creative spirit instead of letting your creative spirit control you. You might need to add some form of meditation into your routine: practice some tai chi, improvise on an instrument, pick up a coloring book, create a mandela, focus on making patterns and the patterns around you. Allow your creative spirit to get into a pattern with you.', 'fourofswords'),
-    new card ('Five of Swords', 'FIVE OF SWORDS: The Five Eagles is about war, competition and victory. Creativity is never a competition so if it’s starting to feel like one, it’s time to step back and remember why you create, what it is that drives your soul, what it is that will bring you peace and purpose. Often, this is a card about failure, acceptance and forgiveness. Your biggest creative block might lie in the comparisons you make between yourself and other people; shut that down. It could also lie in a project you’re not happy with or a fear of failure; remember that failure is necessary for success. Perhaps you should do something that you know you will most likely fail at that could be helpful to your creative pursuits but is not necessary; something that you can fail at without judging yourself for it. Try to learn to code if you’ve never coded before; take a class in glass blowing; start a novel; start something big that you might never finish. And after you’ve started and failed, if you fail, stop and get back to your other projects, remembering that failure is temporary.', 'fiveofswords'),
-    new card ('Six of Swords', 'SIX OF SWORDS: The Six Seagulls is about transition and change. It’s a card of growth and tying up loose ends.  You might have just wrapped up a project and are unsure of what to work on next, or hit a creative plateau on something you’ve lost interest and become stuck in. But have no fear and let the water and flow guide you. Trust your life’s current. Think of your goals. Let your causes lead the way. Do you have at least one goal that helps improve the world in some way, no matter how small? Start there, because right now in the midst of so much unknown is when you’re creating your world the most. Take some time to give back in some way and new creative projects and energy will come to you in abundance. Pick up trash in your favorite park or neighborhood, create a way to raise funds for one of your favorite organizations, or make a poster to help educate your friends about something important to you.', 'sixofswords'),
-    new card ('Seven of Swords', 'SEVEN OF SWORDS: The Parrot Pirate: The Seven of Swords is about the lies you tell yourself or other people that are holding you back. There is an inner struggle or grievance that your psyche is focused on but that you are afraid to express. Perhaps you are angry at yourself for some failure, feel guilt about a conversation or argument with a loved one, or have been lying about your inner well-being. This is a card about telling your truth and dealing with deceit, theft, fraud, hidden secrets. Think about the ways in which your truth or story can be shared in a way that is helpful and not harmful, and tell it in some way.  Are you telling yourself you need more than what you have when you already have plenty? Think about your mantras, the things you repeat to yourself again and again and again. Remember there are no absolutes. To help with this creative block, create something that allows your mind to wander, whether its an abstract painting of the feeling that your lie makes you carry, a poem, or a sculpture of a symbolic object - but use the creative process to tell yourself the truth about whatever situation or belief is troubling you.', 'sevenofswords'),
-    new card ('Eight of Swords', 'EIGHT OF SWORDS: The Caged Bird card represents all the ways in which a person can hold themselves back: how negative self-talk imposes restrictions on what a person believes they can and can not do, and all the ways in which insecurities can be the control levers we use to hold ourselves back from the freedoms and flow we seek. A hummingbird flaps her wings, stuck in the tiny cage of her mind, fearful of leaving even though the door is open. What you must do is turn any negative thoughts that are creeping around upside down. For every negative thought that persists, create a poster based on the opposing positive thought, and repeat the positive thought throughout the process. Use these positivity posters as mantras to stay free from your cage of "I can not". ', 'eightofswords'),
-    new card ('Nine of Swords', 'NINE OF SWORDS: The Nine-Eyed Raven card represents the dark thoughts that keep you up in the middle of the night and the process of working through your fears. The Nine of Swords is the card of monsters and nightmares: of indecision, of being pulled in different directions, of the heart being pulled apart. The Canary sits frozen in its nest on a stormy, swirling night; it is not safe from its dreams, or its environment. The swords represent the anxieties and worries she is fighting. If they hit their target, these swords can become a self-fulfilling prophecy on the way to failure. To combat this creative block, spend 20 minutes on a creative meditation exercise like coloring, crocheting, drumming that allows you to stop worrying and focus solely on the repetitive motion activity at hand. And then think about the things that scare you in a more focused way: What are they? Find inspiration in on what it is you are indecisive about or fearful of. What are you choosing between? What are you afraid of losing? Create a metaphor for how having to make that choice makes you feel, or create a story for the monster that is making you choose.', 'nineofswords'),
-    new card ('Ten of Swords', 'TEN OF SWORDS: The Tragic Flamingo card represents a painful ending, a deep loss and the end of a cycle.  A flamingo lies dying in a shallow pond, struck in her head by a sword, surrounded by nine other swords and pools of blood. This is the card of grief.  But with endings come beginnings, with deep losses come new gains, and at the end of any cycles lie the unlimited possibilities that come from learning, changing and growing. The sun sparkles on the water and the Flamingo awaits her new, enlightened and transformed self. To get past this creative block, write or create a love letter or some sort of tribute for your loss that talks about what you stand to gain after the pain.', 'tenofswords'),
-    new card ('Spirit of Swords', 'SPIRIT OF SWORDS: The Phoenix shows a great, beautiful bird rising above a lake caught on fire, controlling a powerful sword or state of knowledge akin to the enlightenment that comes from being inside a spiritual realm. This card represents renewal, new ideas and a new burst of energy after a period of rest or low flow. There is nothing that can stop you now but yourself. With so much built up energy, the biggest creative block is most likely the feeling of being overwhelmed, of not knowing exactly where to thought, or of being pulled into too many directions. Don’t write a to-do list. Write out the bigger picture. What do you need to learn to get started?' , 'spiritofswords'),
-    new card ('Knight of Swords', 'KNIGHT OF SWORDS: The Striking Owl shows an owl holding a powerful sword of knowledge, killing a snake in a stormy desert. The eagle’s wings are spread and the sword is perfectly straight, showing determination and expertise, while the owl represents an evolved knowledge capable of nearly anything. The owl will need to put all that knowledge to use to beat the coming storm, but it will be worth it when the desert blooms. The challenge here is the risk of burnout, impatience, or trying to do too much, too fast. You’re on a mission, and you need to stay focused. But sometimes focus is improved by breaking it. What have you been spending all your time on lately? Take however much time you can spare to do the opposite.', 'knightofswords'),
-    new card ('Goddess of Swords', 'GODDESS OF SWORDS: The Goddess of Swords shows a beautiful woman showing off her feathers, representing the mastery of inner strength that comes from overcoming loss and personal suffering. She is a symbol of freedom, beauty and intelligence, which makes her powerful and resourceful. The Queen possesses all the knowledge, skills and instincts necessary to get through any situation and to get the truth in all matters. Her knowledge is capable of changing the world. She knows herself inside and out and is comfortable in her own skin, though she is also a master of transformation and change and is able to read which way the wind will blow. Her energy works to give everyone the insight and power they need to become fully themselves. The challenge here could be pride or ego, or a lack thereof. Share your work with others. Hear what they have to say. What does your soul have to say? What are the winds telling you?', 'goddessofswords'),
-    new card ('God of Swords', 'GOD OF SWORDS: The purveyor of enlightenment, advice and knowledge; an authority figure or higher power. The God of Swords radiates deep knowledge, truth, understanding and intuition during a search for truth, answers, meaning or purpose. Their special insight into nature and the universe allows them to see what others cannot. This is a card that asks you to reconnect with nature, the ultimate creative spirit. Your biggest creative block may come from a lack of direction; your intuition may be all over the place. Go somewhere green and quiet and talk to yourself amongst flowers and trees; or, if it’s the middle of winter, inspire yourself by reminiscing about the last beautiful place you went to. Go through old photographs, plan a future journey, imagine a conversation with a mountain and write it down. ', 'godofswords'),
-    new card ('Ace of Wands', 'The Ace of Wands: The Magician card shows an octopus holding a wand, manifesting the beginnings of a beautiful coral reef. The is a card about inspiration and the thoughts and ideas that most excite you. You’re just getting swept up into something, which means it’s just the beginning of the ride. Stay flexible, go down those rabbit holes, take notes. You’ll know when it’s time to relax but for now, go to your favorite creative space and let loose. Don’t forget to stop and dance every so often. ', 'aceofwands'),
-    new card ('Two of Wands', 'The Two of Wands: The Dragonfly shows a beautiful winged creature flying over some water lillies in a lotus pond, two wands standing motionless on both sides. This is a card representing a time for planning and meditation. The lotus pond represents a comfort zone of peace and safety, away from the stresses of the larger world. It’s a card about feeling at home but being unable to stay there forever. You were meant for great things. Go some place natural and beautiful to brew on what they are.', 'twoofwands'),
-    new card ('Three of Wands', 'THREE OF WANDS: The Sea Turtle makes their way to the ocean, lead there by the wisdom and direction of ancestors, passed along through generations by spiritual forces so strong they don’t require a physical presence to be followed. This is a card about progress, momentum, opportunities and foresight. You’re going in the right direction. Even if you don’t know where you’re going, you’ve got signs guiding you along the way.  You just have to be looking out for them, and figure out which ones to follow as you broaden your horizons and get comfortable out at sea. If you’re feeling blocked here, think about all the different kinds of signs you come across each and every day, from road signs to whatever it is the clouds are telling you. Create your own sign. What’s your soul telling you it should say?', 'threeofwands'),
-    new card ('Four of Wands', 'FOUR OF WANDS: Two dolphins expertly leap through a diamond-shaped hurdle, representing the successful completion of an important step or milestone, You may not realize how much you’ve achieved already, but it’s time to have fun and celebrate your accomplishments so far. Enjoy the harmony and stability you should be feeling and find a way to reward yourself and those who have been supporting you.  Throw a party, host a game night or potluck with friends, buy some concert tickets. Laugh and let loose, and don’t keep your successes to yourself. ', 'Fourofwands'),
-    new card ('Five of Wands', 'The Narwhals card indicates an imagined or unnecessary war or competition, whether amongst friends or yourself and the negative thoughts that block your creative flow. Whatever foe you face, victory is within grasp. It may feel like you’re all fighting for the same fish, but there are plenty of fish around. A little competitive fun never hurt anyone, but creativity isn’t a zero sum game. There is balance between self-growth and self-criticism; between flow and function; between inspiration and implementation. Work on your balance to maintain your flow. Spend a day figuring out creative or kind ways to lift others up and eventually someone will return the favor.', 'Fiveofwands'),
-    new card ('Six of Wands', 'SIX OF WANDS: The Sea Lions depicts five sea lions cheering on another as they leap out of water and over an iceberg on a beautiful night lit by the northern lights. This card represents what happens when we make it to the top: Has there been accolades? Or silence? The external reaction to what you’ve put out so far isn’t always a reflection of you or your work, but of your confidence and your ability to positively communicate the things that make you uniquely you.  For some, that comes naturally. Others will always believe themselves to be an imposter. You’re not. You’ve just got to find the right audience, and be ready for the admiration when it comes. Advertise. How? That’s up to you. Just don’t let your ego in charge.', 'Sixofwands'),
-    new card ('Seven of Wands', 'SEVEN OF WANDS: The Orca depicts a killer whale surrounded by sharks. The competition and stakes here is real. The sharks are fearsome physically and perhaps you’re finding yourself out-gunned in some way.  There is a lot of pressure that comes after successly finishing a creative project or goal. Some people want what you have; others are upset about what they don’t have. Either way, it feels like you’re being circled by something ominous, and you might not even realize it. It’s okay to get knocked down a little, but don’t forget about all the powers you’ve developed to get to where you are. Creativity builds resourcefulness and a unique ability to solve problems. You don’t have to out gun someone you can outsmart. There isn’t a problem that can’t be fixed.  When seen in the right light, all problems are opportunities, and you’ve got some magic on your side. If you’re having doubts, challenge yourself to a contest: Nothing too big that it distracts from where you need to be, but nothing to small that others don’t notice it. Create something that shows your progression or allows you to quickly show off your skills. ', 'Sevenofwands'),
-    new card ('Eight of Wands', 'EIGHT OF WANDS: The Penguins shows a group of penguins all swimming together with the current, playing in waves, their wands of inspiration moving with them in the ocean’s flow. This is a card about motion and travel, getting from where you are to where you’re going next. There’s a lot of energy surrounding you right now but you know how to ride the wave. Stay enthusiastic. Don’t question your worthiness for any opportunities you’re surrounded by. There are wild rides to come. Allow yourself to get excited and grab ahold of new ideas, and if they aren’t coming to you naturally, get out of Dodge. Take a day trip, a weekend, a week to go somewhere new and let your adventurous spirit wander. The next thing will come to you. ', 'eightofwands'),
-    new card ('Nine of Wands', 'The Nine of Wands', 'nineofwands'),
-    new card ('Ten of Wands', 'The Ten of Wands: A lizard travels determinedly across a hot beach lined with unique treasures, but must push on anyway, as they have their hands full carrying their wands across the beach. The wands magic has been momentarily extinguished. This is a card about how much you have taken on and all the ways it is weighing you down. But you are not stopping. Maybe you do not even know how to stop. Perfectionism has its downsides. The struggle here is knowing when to stop, being able to hear that feeling of completion flow across your body and mind. It does not ever seem to last long but sometimes you gotta hold on to it. It is done. Stop what you are doing for a while and do a timed exercise: Draw or color for exactly 30 minutes. And then no matter what, call it a job well done.', 'tenofwands'),
+function disableScroll() {
+  document.body.style.overflow = 'hidden'};
 
-];
+window.addEventListener('load', disableScroll);
 
-function getRandom(num){
-    var randomNumber = 
-    Math.floor(Math.random() * num);
-    return randomNumber;
-}
+let isShuffled = false;
 
-document.getElementById("DisplayReading").onclick
-=function(){
-    var index = getRandom(24);
-    var currentCard = deck[index];
+function shuffleCards() {
+    const container = document.querySelector('.tarotcardshuffle-container');
+    const cards = Array.from(document.querySelectorAll('.tarotcardshuffle'));
+  
+    // Calculate the maximum position offsets within the container
+    const maxOffsetX = container.clientWidth - cards[0].clientWidth;
+    const maxOffsetY = container.clientHeight - cards[0].clientHeight;
+  
+    container.style.display = 'block'; // Show the container
+    container.classList.add('shuffle-active'); // Add shuffle-active class
+  
+    cards.forEach(card => {
+      // Generate random position offsets within the container
+      const offsetX = Math.floor(Math.random() * maxOffsetX);
+      const offsetY = Math.floor(Math.random() * maxOffsetY);
+  
+      // Generate random position along the Z-axis
+      const translateZ = Math.floor(Math.random() * 200) - 100; // Range: -100 to 100
+  
+      // Generate random rotation angle
+      const rotation = Math.floor(Math.random() * 361); // Range: 0 to 360
+  
+      // Apply the random positions, translation, and rotation to the card
+      card.style.position = 'absolute';
+      card.style.left = `${offsetX}px`;
+      card.style.top = `${offsetY}px`;
+      card.style.transform = `translateZ(${translateZ}px) rotate(${rotation}deg)`;
+      card.style.transition = '1s';
+  
+      // Add event listeners for hover and click
+      card.addEventListener('mouseenter', handleCardHover);
+      card.addEventListener('mouseleave', handleCardLeave);
+      card.addEventListener('click', handleCardClick);
+    });
+    
+    isShuffled = true;
+  }
+  
+  function gatherCards() {
+    const container = document.querySelector('.tarotcardshuffle-container');
+    const cards = Array.from(document.querySelectorAll('.tarotcardshuffle'));
+  
+    container.style.display = 'block'; // Show the container
+    container.classList.add('shuffle-active'); // Add shuffle-active class
+  
+    const radius = 225; // Radius of the circular shape
+    const centerX = container.clientWidth / 2; // X-coordinate of the center point
+    const centerY = container.clientHeight / 2; // Y-coordinate of the center point
+  
+    // Shuffle the cards randomly
+    shuffleArray(cards);
+  
+    const angleIncrement = (2 * Math.PI) / cards.length; // Angle increment between each card
+  
+    cards.forEach((card, index) => {
+      const angle = index * angleIncrement; // Calculate the angle in radians
+  
+      // Calculate the card position based on the angle and radius
+      const offsetX = centerX + radius * Math.cos(angle) - card.clientWidth / 2;
+      const offsetY = centerY + radius * Math.sin(angle) - card.clientHeight / 2;
+  
+      // Apply the position and rotation to the card
+      card.style.position = 'absolute';
+      card.style.left = `${offsetX}px`;
+      card.style.top = `${offsetY}px`;
+      card.style.transform = `rotate(${angle}rad)`;
+      card.style.transition = '1s';
+  
+      // Add event listeners for hover and click
+      card.addEventListener('mouseenter', handleCardHover);
+      card.addEventListener('mouseleave', handleCardLeave);
+      card.addEventListener('click', handleCardClick);
+    });
+  }
+  
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+  function handleCardHover(event) {
+    const card = event.target;
+    card.style.transform += ' scale(1.4)';
+    card.style.zIndex = '9999';
+  }
 
-    document.getElementById("display").innerHTML = 
-    '<img src="/Web/' + currentCard.image + '.jpg">';
+  function handleCardLeave(event) {
+    const card = event.target;
+    card.style.transform = 'scale(1)';
+    card.style.zIndex = Math.floor(Math.random() * 100);
+  }
 
-    document.getElementById("displayName").innerHTML = 
-    '<h2>' + currentCard.name + '</h2>' + '<p>' + '<body>' + currentCard.description + '</body>' + '</p>';
-}
+
+  function handleCardClick(event) {
+    const card = event.target;
+    const href = card.querySelector('a').href;
+    window.location.href = href;
+  }
+  
+  const shuffleButton = document.querySelector('.shuffleButton');
+  shuffleButton.addEventListener('click', shuffleCards);
+
+  const gatherButton = document.querySelector('.gatherButton');
+  gatherButton.addEventListener('click', gatherCards);
+
+  
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.twinkling-stars');
+    const starCount = 15; // Number of stars in the trail
+  
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      container.appendChild(star);
+    }
+  
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('.twinkling-stars');
+        const starCount = 30; // Number of stars in the trail
+      
+        for (let i = 0; i < starCount; i++) {
+          const star = document.createElement('div');
+          star.classList.add('star');
+          container.appendChild(star);
+        }
+      
+        const containerRect = container.getBoundingClientRect();
+      
+        document.addEventListener('mousemove', (event) => {
+          const mouseX = event.clientX - containerRect.left;
+          const mouseY = event.clientY - containerRect.top;
+      
+          const stars = container.querySelectorAll('.star');
+      
+          stars.forEach((star, index) => {
+            const xPos = mouseX + (index * 10) - 100;
+            const yPos = mouseY + (index * 10) - 100;
+      
+            star.style.transform = `translate(${xPos}px, ${yPos}px)`;
+          });
+        });
+      })});
