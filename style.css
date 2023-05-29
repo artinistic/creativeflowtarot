@@ -20,9 +20,9 @@ body {
 }
      
 header{   
-    height:60px;
-    padding:10px;
-    color:#FFFFFF
+    height:50px;
+    color:#FFFFFF;
+    display: inline;
 }
 
 .homepage{
@@ -31,7 +31,6 @@ header{
         font-family: 'Josefin Sans';
         font-weight: 400;
         font-size: 20px;
-        margin: 10px;
         background-color:lightcoral;
 }
 
@@ -41,7 +40,6 @@ header{
     font-family: 'Josefin Sans';
     font-weight: 400;
     font-size: 20px;
-    margin: 10px;
     background-color:#FF6EB6;
 }
 
@@ -61,65 +59,170 @@ header{
     height: 5px;
     background-color: white;
   }
-/*Introduction*/
+
+
+  /*Introduction*/
+  .introimage {
+    align-self: center;
+    max-height: 1000px;
+    grid-area: a;
+  }
+
+  /* Styles for screens wider than 1024px */
+  @media (min-width: 1025px) {
+    
     .intro-banner{
     background-image: url(picnictablebg.png);
-    width: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    background-repeat: repeat-y;
     position: relative;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 200px;
     background-position: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "a b"
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    overflow: scroll;
     }   
 
+    .introall {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a b";
+    overflow: auto;
+    max-height: 900px;
+    box-sizing: border-box;
+    }
+
     .introimage{
-        margin-top:20px;
-        margin-left: 200px;
-        height: 800px;
-        grid-area: a;
-        align-self: right;
-        border-color: white;
-        border-width: 10px;
-        box-shadow: 30px, 30px, 30px, black;
+    margin-top:10%;
+    margin-bottom: 10%;
+    width: 70%;
+    margin-right: 10%;
+    margin-left: auto;
+    max-height: 800px;
+    grid-area: a;
+    align-items: right;
+    box-shadow: 30px, 30px, 30px, black;
     }
 
     .introcontent{
-        grid-area: b;
-        margin-top: 30px;
-        align-items: center;
+    grid-area: b;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    align-items: left;
+    margin-left: 25px;
+    margin-right: auto;
+    max-width: 80%;
+    padding-left: 5%;
     }
 
     .title {
     text-shadow: 10px 10px 10px grey;
-    }
-    .h1 {
-    transform:scale(100%);
-    font-size: 80px;
-    color: white;
-    text-shadow: 30px, 30px, 30px, black;
-    line-height: 8rem;
-    margin-top:-150px;
-    margin-left: -100px;
+    margin-bottom: -100px;
     }
 
-    .h2 {
+    .h1 {
     font-size: 60px;
-    color:#000000;
-    font-weight: 400;
-    text-align: center;
+    color: teal;
+    text-shadow: 30px, 30px, 30px, black;
+    line-height: 6rem;
     }
+    
     .playnow{
         background-color:#FF6EB6;
         padding: 10px;
-        margin-left: -50px;
-        margin-top: -70px;
         font-family: 'Josefin Sans';
         font-weight: '400';
         font-size: 30px;
+        color: white;
+        box-shadow: 30px, 30px, 30px, black;
+        margin-top: -100px;
+    }
+
+    .about{
+        background-color:#00B6CE;
+        padding: 10px;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        color: white;
+        box-shadow: 30px, 30px, 30px, black;
+    }
+}
+
+  /* Styles for screens between 600px and 1024px */
+    @media (min-width: 601px) and (max-width: 1023px) {
+    .intro-banner {
+      background-image: url(picnictablebg.png);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 100px;
+      overflow: scroll;
+      background-repeat: repeat-y;
+      position: relative;
+    }
+
+    .introall {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        height: 90vh;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-top: -100px;
+        margin-right: 5%;
+        margin-left: 5%;
+        }
+
+    .introimage {
+        align-self: center;
+        max-width: calc(100vw - 10%); /* Adjusted */
+        height: auto; /* Adjusted */
+        margin: 5% auto; /* Adjusted */
+        }
+
+    .introcontent{
+        align-content: center;
+        align-items: center;
+        margin-top: -350px;
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+
+    .title {
+        text-shadow: 10px 10px 10px grey;
+        align-items: center;
+        opacity: 0;
+        margin-top: -300px;
+        }
+    
+    .h1 {
+        font-size: 45px;
+        color: white;
+        text-shadow: 30px, 30px, 30px, black;
+        line-height: 4rem;
+        margin-bottom: -50px;
+        text-align: center;
+        }
+    
+    .introbuttons {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .playnow{
+        background-color:#FF6EB6;
+        padding: 10px;
+        align-self: center;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 25px;
         color: white;
         box-shadow: 30px, 30px, 30px, black;
     }
@@ -127,18 +230,144 @@ header{
     .about{
         background-color:#00B6CE;
         padding: 10px;
-        margin-left: -50px;
-        margin-top: 10px;
+        align-self: center;
         font-family: 'Josefin Sans';
         font-weight: '400';
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         box-shadow: 30px, 30px, 30px, black;
     }
+}
+  /* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+      
+header{   
+    height:25px;
+    color:#FFFFFF;
+    display: inline;
+}
+
+.homepage{
+        color: white;
+        padding: 10px;
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        font-size: 10px;
+        background-color:lightcoral;
+        width: 100%;
+        margin-top: -20px;
+}
+
+.seabirdssongs{
+    color: white;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 10px;
+    background-color:#FF6EB6;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.intro-banner {
+        background-image: url(picnictablebg.png);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        background-repeat: repeat-y;
+        position: relative;
+      }
+  
+.introall {
+        height: 85vh;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 5% auto;
+          }
+  
+.introimage {
+    display: flex;
+    align-self: center;
+    width: 90%; /* Adjusted */
+    margin-top: -20%;
+
+          }
+
+.introimage img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.introcontent{
+          align-content: center;
+          align-items: center;
+          margin-top: -400px;
+          margin-left: 5%;
+          margin-bottom: 50px;
+      }
+  
+.title {
+          text-shadow: 10px 10px 10px grey;
+          align-items: center;
+          opacity: 0;
+          margin-top: -30%;
+          }
+      
+.h1 {
+          font-size: 20px;
+          color: white;
+          text-shadow: 5px, 5px, 5px, black;
+          line-height: 2rem;
+          text-align: center;
+          }
+      
+.introbuttons {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          display: block;
+      }
+  
+.playnow{
+          background-color:#FF6EB6;
+          padding: 10px;
+          width: 100%;
+          align-self: center;
+          font-family: 'Josefin Sans';
+          font-weight: '400';
+          font-size: 20px;
+          color: white;
+          box-shadow: 30px, 30px, 30px, black;
+      }
+  
+      .about{
+          background-color:#00B6CE;
+          padding: 10px;
+          align-self: center;
+          font-family: 'Josefin Sans';
+          font-weight: '400';
+          font-size: 20px;
+          color: white;
+          width: 100%;
+          box-shadow: 30px, 30px, 30px, black;
+      }
+  }
+
+
 /*End of Introduction*/
 
 /*Start of Section1*/
-
+/* Styles for screens wider than 1024px */
+@media (min-width: 1024px) {
    .tarotdeckhover {
     background-image: url(picnictablebg.png);
     width: 100%;
@@ -204,10 +433,13 @@ header{
     color: white;
     opacity: .9;
         }
+    }
 
 /*End of Section1*/
 
 /*Start of Section2*/
+/* Styles for screens wider than 1024px */
+@media (min-width: 1024px) {
 .flipscene {
     background-image: url(picnictablebg.png);
     width: 100%;
@@ -285,10 +517,12 @@ header{
     color: white;
     opacity: .9;
 }
+}
 /*EndofSection2*/
 
 /*StartofSection3NEW*/
-
+/* Styles for screens wider than 1024px */
+@media (min-width: 1024px) {
 .shufflescene {
     background-image: url(picnictablebg.png);
     width: 1600px;
@@ -409,8 +643,10 @@ header{
     padding-left: 30%;
     font-weight: bold;
 }
+}
 /*StartofSection4*/
-
+/* Styles for screens wider than 1024px */
+@media (min-width: 1024px) {
 .readingsCard {
     background-image: url(picnictablebg.png);
     background-size: 1900px;
@@ -476,7 +712,7 @@ header{
     box-shadow: 10px 10px 10px gray;
     margin: 50px;
 }
-
+}
 
 /*EndofSection4*/
 /*StartofFinalSection*/
