@@ -110,42 +110,4 @@ function shuffleCards() {
 
   const gatherButton = document.querySelector('.gatherButton');
   gatherButton.addEventListener('click', gatherCards);
-
-  
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.twinkling-stars');
-    const starCount = 15; // Number of stars in the trail
-  
-    for (let i = 0; i < starCount; i++) {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      container.appendChild(star);
-    }
-  
-    document.addEventListener('DOMContentLoaded', () => {
-        const container = document.querySelector('.twinkling-stars');
-        const starCount = 30; // Number of stars in the trail
-      
-        for (let i = 0; i < starCount; i++) {
-          const star = document.createElement('div');
-          star.classList.add('star');
-          container.appendChild(star);
-        }
-      
-        const containerRect = container.getBoundingClientRect();
-      
-        document.addEventListener('mousemove', (event) => {
-          const mouseX = event.clientX - containerRect.left;
-          const mouseY = event.clientY - containerRect.top;
-      
-          const stars = container.querySelectorAll('.star');
-      
-          stars.forEach((star, index) => {
-            const xPos = mouseX + (index * 10) - 100;
-            const yPos = mouseY + (index * 10) - 100;
-      
-            star.style.transform = `translate(${xPos}px, ${yPos}px)`;
-          });
-        });
-      })});
+;
