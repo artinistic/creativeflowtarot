@@ -2,36 +2,142 @@
 :root {
 
     /* Colors: */
-    --unnamed-color-a60dde: #A60DDE;
-    --unnamed-color-00b6ce: #00B6CE;
-    --unnamed-color-707070: #707070;
-    --unnamed-color-ff6eb6: #FF6EB6;
-    --unnamed-color-ffffff: #FFFFFF;
-    --unnamed-color-000000: #000000;
+    --purple: #A60DDE;
+    --teal: #00B6CE;
+    --pink: #FF6EB6;
+    --white: #FFFFFF;
+    --black: #000000;
 }  
-   
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24 px;
-    font-weight:100;
-    background-color: white;
-    padding: 40px;
-    overflow: hidden;
-}
-     
-header{   
-    height:50px;
-    color:#FFFFFF;
-    display: inline;
-}
+  /*Introduction*/
+/* Styles for landscape screens wider than 2000px */
+@media (min-width: 2000px) and (orientation: landscape)  {
+    
+.intro-banner{
+    background-image: url(SunsetFlow-Pink.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    }   
 
 .homepage{
-        color: white;
+    color: white;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 30px;
+    background-color:lightcoral;
+    display: inline-flex;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.seabirdssongs{
+    color: white;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 30px;
+    background-color:#FF6EB6;
+    display: inline-flex;
+}
+
+.introall {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a b";
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 100vw;
+    box-sizing: border-box;
+    }
+
+.introimage{
+    margin-top:5%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: auto;
+    grid-area: a;
+    align-self: right;
+    box-shadow: 30px, 30px, 30px, black;
+    }
+
+.introimage img {
+    height: 90vh;
+}
+.introcontent{
+    grid-area: b;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    align-items: left;
+    margin-right: auto;
+    max-width: 80%;
+    padding-left: 5%;
+    }
+
+.title {
+    text-shadow: 10px 10px 10px grey;
+    margin-bottom: -100px;
+    }
+
+.h1 {
+    font-size: 80px;
+    color: rgb(249, 33, 119);
+    text-shadow: 30px, 30px, 30px, black;
+    line-height: 8rem;
+    font-family: 'Josefin Sans';
+    margin-bottom: -50px;
+    }
+    
+.playnow{
+        background-color: turquoise;
         padding: 10px;
         font-family: 'Josefin Sans';
-        font-weight: 400;
-        font-size: 20px;
-        background-color:lightcoral;
+        font-weight: '400';
+        font-size: 30px;
+        color: white;
+        box-shadow: 30px, 30px, 30px, black;
+        margin-top: -100px;
+    }
+
+.about{
+        background-color:#00B6CE;
+        padding: 10px;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        color: white;
+        box-shadow: 30px, 30px, 30px, black;
+    }
+}
+
+  /* Styles for landscape screens wider than 1024px */
+@media (min-width: 1024px) and (max-width: 1999px) and (orientation: landscape) {
+    
+.intro-banner{
+    background-image: url(SunsetFlow-Pink.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: repeat-y;
+    position: relative;
+    background-position: center;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    }   
+
+.homepage{
+    color: white;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 20px;
+    background-color:lightcoral;
+    display: inline-flex;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 .seabirdssongs{
@@ -41,49 +147,10 @@ header{
     font-weight: 400;
     font-size: 20px;
     background-color:#FF6EB6;
+    display: inline-flex;
 }
 
-.twinkling-stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-  }
-  
-  .star {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: white;
-  }
-
-
-  /*Introduction*/
-  .introimage {
-    align-self: center;
-    max-height: 1000px;
-    grid-area: a;
-  }
-
-  /* Styles for screens wider than 1024px */
-  @media (min-width: 1025px) {
-    
-    .intro-banner{
-    background-image: url(picnictablebg.png);
-    width: 100%;
-    height: 1000px;
-    background-repeat: repeat-y;
-    position: relative;
-    background-position: center;
-    margin-bottom: 100px;
-    box-sizing: border-box;
-    overflow: scroll;
-    }   
-
-    .introall {
+.introall {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "a b";
@@ -92,11 +159,10 @@ header{
     box-sizing: border-box;
     }
 
-    .introimage{
-    margin-top:10%;
+.introimage{
+    margin-top:5%;
     margin-bottom: 10%;
-    width: 70%;
-    margin-right: 10%;
+    margin-right: 5%;
     margin-left: auto;
     max-height: 800px;
     grid-area: a;
@@ -104,119 +170,142 @@ header{
     box-shadow: 30px, 30px, 30px, black;
     }
 
-    .introcontent{
+.introimage img {
+    height: 80vh;
+}
+
+.introcontent{
     grid-area: b;
     margin-top: 10%;
     margin-bottom: 10%;
     align-items: left;
-    margin-left: 25px;
     margin-right: auto;
     max-width: 80%;
     padding-left: 5%;
     }
 
-    .title {
-    text-shadow: 10px 10px 10px grey;
-    margin-bottom: -100px;
+.title {    
+    margin-bottom: -75px;
     }
 
-    .h1 {
-    font-size: 60px;
-    color: teal;
+.h1 {
+    font-size: 50px;
+    color: rgb(13, 53, 80);
     text-shadow: 30px, 30px, 30px, black;
-    line-height: 6rem;
+    line-height: 5rem;
+    font-family: 'Josefin Sans';
+    margin-bottom: -50px;
     }
     
-    .playnow{
-        background-color:#FF6EB6;
-        padding: 10px;
-        font-family: 'Josefin Sans';
-        font-weight: '400';
-        font-size: 30px;
-        color: white;
-        box-shadow: 30px, 30px, 30px, black;
-        margin-top: -100px;
+.playnow{
+    background-color:#FF6EB6;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: '400';
+    font-size: 25px;
+    color: white;
+    box-shadow: 30px, 30px, 30px, black;
+    margin-top: -100px;
     }
 
-    .about{
-        background-color:#00B6CE;
-        padding: 10px;
-        font-family: 'Josefin Sans';
-        font-weight: '400';
-        font-size: 30px;
-        color: white;
-        box-shadow: 30px, 30px, 30px, black;
+.about{
+    background-color:#00B6CE;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: '400';
+    font-size: 25px;
+    color: white;
+    box-shadow: 3px, 3px, 6px, black;
     }
 }
+  /* Styles for landscape screens between 601px and 1024px */
+@media (min-width: 600px) and (max-width: 1023px) and (orientation: landscape) {
+.intro-banner {    
+        background-image: url(SunsetFlow-Pink.jpg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-y;
+        position: relative;
+        background-position: center;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+        }   
 
-  /* Styles for screens between 600px and 1024px */
-    @media (min-width: 601px) and (max-width: 1023px) {
-    .intro-banner {
-      background-image: url(picnictablebg.png);
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 100px;
-      overflow: scroll;
-      background-repeat: repeat-y;
-      position: relative;
-    }
+.homepage{
+        color: white;
+        padding: 10px;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 15px;
+        background-color:lightcoral;
+        display: inline-flex;
+        margin: 2%;
+            }
+            
+.seabirdssongs{
+        color: white;
+        padding: 10px;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 15px;
+        background-color:#FF6EB6;
+        display: inline-flex;
+        margin: 2%;
+        }
+         
 
-    .introall {
+.introall {
         display: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        height: 90vh;
+        flex-wrap: flex;
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        margin-top: -100px;
         margin-right: 5%;
         margin-left: 5%;
         }
 
-    .introimage {
+.introimage {
         align-self: center;
         max-width: calc(100vw - 10%); /* Adjusted */
-        height: auto; /* Adjusted */
-        margin: 5% auto; /* Adjusted */
-        }
+        height: auto; /* Adjusted */        }
 
-    .introcontent{
+.introimage img{
+    max-height: 75vh;
+    margin-top: auto;
+}
+
+.introcontent{
         align-content: center;
         align-items: center;
-        margin-top: -350px;
         margin-left: 5%;
-        margin-bottom: 50px;
+        margin-bottom: 5%px;
+        margin-top: 2%;
     }
 
-    .title {
+.title {
         text-shadow: 10px 10px 10px grey;
         align-items: center;
         opacity: 0;
         margin-top: -300px;
         }
     
-    .h1 {
-        font-size: 45px;
+.h1 {
+        font-size: 40px;
         color: white;
         text-shadow: 30px, 30px, 30px, black;
         line-height: 4rem;
         margin-bottom: -50px;
-        text-align: center;
+        text-align: left;
+        font-family: 'Josefin Sans';
         }
     
-    .introbuttons {
+.introbuttons {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
 
-    .playnow{
+.playnow{
         background-color:#FF6EB6;
         padding: 10px;
         align-self: center;
@@ -224,10 +313,11 @@ header{
         font-weight: '400';
         font-size: 25px;
         color: white;
+        width: 100%;
         box-shadow: 30px, 30px, 30px, black;
     }
 
-    .about{
+.about{
         background-color:#00B6CE;
         padding: 10px;
         align-self: center;
@@ -235,27 +325,35 @@ header{
         font-weight: '400';
         font-size: 25px;
         color: white;
+        width: 100%;
+        opacity: 1;
         box-shadow: 30px, 30px, 30px, black;
     }
 }
-  /* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-      
-header{   
-    height:25px;
-    color:#FFFFFF;
-    display: inline;
-}
+  /* Styles for portrait screens smaller than 600px */
+@media (max-width: 599px) {
+.intro-banner {
+        background-image: url(SunsetFlow-Pink.jpg);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 400px;
+        background-repeat: repeat-y;
+        position: relative;
+      }
 
-.homepage{
+      .homepage{
         color: white;
         padding: 10px;
         font-family: 'Josefin Sans';
         font-weight: 700;
-        font-size: 10px;
+        font-size: 15px;
         background-color:lightcoral;
         width: 100%;
-        margin-top: -20px;
+        margin-top: 5%;
 }
 
 .seabirdssongs{
@@ -263,24 +361,11 @@ header{
     padding: 10px;
     font-family: 'Josefin Sans';
     font-weight: 700;
-    font-size: 10px;
+    font-size: 15px;
     background-color:#FF6EB6;
     width: 100%;
-    margin-top: -20px;
-}
 
-.intro-banner {
-        background-image: url(picnictablebg.png);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
-        background-repeat: repeat-y;
-        position: relative;
-      }
+}
   
 .introall {
         height: 85vh;
@@ -299,6 +384,7 @@ header{
     align-self: center;
     width: 90%; /* Adjusted */
     margin-top: -20%;
+    position: absolute;
 
           }
 
@@ -310,24 +396,24 @@ header{
 .introcontent{
           align-content: center;
           align-items: center;
-          margin-top: -400px;
           margin-left: 5%;
           margin-bottom: 50px;
+          position: absolute;
       }
   
 .title {
           text-shadow: 10px 10px 10px grey;
           align-items: center;
           opacity: 0;
-          margin-top: -30%;
           }
       
 .h1 {
-          font-size: 20px;
+          font-size: 25px;
           color: white;
           text-shadow: 5px, 5px, 5px, black;
-          line-height: 2rem;
+          line-height: 2.5rem;
           text-align: center;
+          font-family: 'Josefin Sans';
           }
       
 .introbuttons {
@@ -340,13 +426,14 @@ header{
 .playnow{
           background-color:#FF6EB6;
           padding: 10px;
-          width: 100%;
+          width: 60%;
           align-self: center;
           font-family: 'Josefin Sans';
           font-weight: '400';
           font-size: 20px;
           color: white;
           box-shadow: 30px, 30px, 30px, black;
+          margin-top: 5%;
       }
   
       .about{
@@ -357,36 +444,148 @@ header{
           font-weight: '400';
           font-size: 20px;
           color: white;
-          width: 100%;
+          width: 60%;
           box-shadow: 30px, 30px, 30px, black;
       }
   }
 
+/* Styles for portrait screens larger than 600px */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+.intro-banner {
+            background-image: url(SunsetFlow-Pink.jpg);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 400px;
+            background-repeat: repeat-y;
+            position: relative;
+          }
+    
+.homepage{
+            color: white;
+            padding: 10px;
+            font-family: 'Josefin Sans';
+            font-weight: 700;
+            font-size: 15px;
+            background-color:lightcoral;
+            width: 100%;
+            margin-top: 5%;
+    }
 
+    .seabirdssongs{
+        color: white;
+        padding: 10px;
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        font-size: 15px;
+        background-color:#FF6EB6;
+        width: 100%;
+    
+    }
+      
+.introall {
+            height: 85vh;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: 5% auto;
+              }
+      
+.introimage {
+        align-self: center;/* Adjusted */
+        margin-top: 5%;
+        position: absolute;
+    
+              }
+    
+.introimage img {
+        width: auto;
+        height: 75vh;
+    }
+      
+.introcontent{
+              align-content: center;
+              align-items: center;
+              position: absolute;
+          }
+      
+.title {
+              text-shadow: 10px 10px 10px grey;
+              align-items: center;
+              opacity: 0;
+              margin-top: 25%;
+              }
+          
+.h1 {
+              font-size: 45px;
+              color: white;
+              text-shadow: 5px, 5px, 5px, black;
+              line-height: 4.5rem;
+              text-align: center;
+              font-family: 'Josefin Sans';
+              }
+          
+.introbuttons {
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              display: block;
+              margin-top: -10%;
+          }
+      
+.playnow{
+              background-color:#FF6EB6;
+              padding: 10px;
+              width: 60%;
+              align-self: center;
+              font-family: 'Josefin Sans';
+              font-weight: '400';
+              font-size: 20px;
+              color: white;
+              box-shadow: 30px, 30px, 30px, black;
+          }
+      
+.about{
+              background-color:#00B6CE;
+              padding: 10px;
+              align-self: center;
+              font-family: 'Josefin Sans';
+              font-weight: '400';
+              font-size: 20px;
+              color: white;
+              width: 60%;
+              box-shadow: 30px, 30px, 30px, black;
+          }
+}
 /*End of Introduction*/
 
 /*Start of Section1*/
-/* Styles for screens wider than 1024px */
-@media (min-width: 1024px) {
+/* Styles for landscape screens wider than 1400px */
+@media (min-width: 1400px){
    .tarotdeckhover {
-    background-image: url(picnictablebg.png);
-    width: 100%;
-    height: 1000px;
+    background-image: url(waves-2.jpg);
+    width: cover;
+    height: 100vh;
     background-repeat: no-repeat;
-    margin-bottom: 400px; 
     position: relative;
-    display: grid;
-    overflow:scroll;        
+    background-size: cover; 
     }
 
-    .hovercards-container {
-    padding: 10px;
-    margin-bottom: 50px;
-    width: 100%;
+.hovercards-container {
+    width: 90%;
     height: 90vh;
+    box-sizing: border-box;
+    margin: 5%;
     }
 
-    .tarotcardshover {
+.tarotcardshover {
     width: 95%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -396,7 +595,8 @@ header{
     margin-bottom: 100px;
     }
 
-    .hovertarotcard{
+.hovertarotcard{
+    display: grid;
     width: 200px;
     height: 300px;
     perspective: 300px;
@@ -409,7 +609,7 @@ header{
     margin-bottom: -100px;
         }
 
-    .hovertarotcard:hover {
+.hovertarotcard:hover {
     transform: scale(2);
     transition: transform 1s;
     position: relative;
@@ -417,14 +617,14 @@ header{
     z-index: 1000;
         }
 
-    .overlaybutton {
+.flipbutton {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 40%;
     z-index: 300;
         }
 
-    .flipDeck {
+.flipDeck {
     background-color: turquoise;
     font-family: 'Josefin Sans';
     font-weight: '400';
@@ -432,30 +632,336 @@ header{
     padding: 1rem;
     color: white;
     opacity: .9;
+    z-index: 1500;
+    width: 400px;
         }
     }
 
+/* Styles for landscape screens wider than 1000 and smaller than 1400 px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .tarotdeckhover {
+     background-image: url(waves-2.jpg);
+     width: cover;
+     height: 100vh;
+     background-repeat: no-repeat;
+     position: relative;
+     background-size: cover; 
+     }
+ 
+ .hovercards-container {
+     width: 95%;
+     height: 90vh;
+     box-sizing: border-box;
+     overflow: scroll;
+     margin-bottom: 200px;
+     }
+ 
+ .tarotcardshover {
+     width: 95%;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: repeat(5, -40%);
+     grid-auto-flow: dense;
+     grid-gap: -40%;
+     }
+    
+.hovertarotcard{
+     display: grid;
+     grid-auto-flow: row;
+     width: 200px;
+     height: 300px;
+     perspective: 300px;
+     scale: .5;
+     transition: 1s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     background-image: url(TarotCardBacking_backwards.jpg);
+     z-index: 1;
+     margin-bottom: -100px;
+         }
+
+.hovertarotcard img {
+    width: 200px;
+    height: 300px;
+}
+ 
+ .hovertarotcard:hover {
+     transform: scale(2);
+     transition: transform 1s;
+     position: relative;
+     background-image: url(TarotCardBacking_smallweb.jpg);
+     z-index: 1000;
+         }
+ 
+ .flipbutton {
+     position: absolute;
+     top: 90%;
+     left: 40%;
+     z-index: 300;
+         }
+ 
+ .flipDeck {
+     background-color: turquoise;
+     font-family: 'Josefin Sans';
+     font-weight: '400';
+     font-size: 30px;
+     padding: 1rem;
+     color: white;
+     opacity: .9;
+     z-index: 1500;
+     width: 400px;
+         }
+     }
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+.tarotdeckhover {
+         background-image: url(waves-2.jpg);
+         width: cover;
+         height: 100vh;
+         background-repeat: no-repeat;
+         position: relative;
+         background-size: cover; 
+         }
+     
+.hovercards-container {
+         width: 95%;
+         height: 90vh;
+         box-sizing: border-box;
+         overflow: scroll;
+         margin-bottom: 200px;
+         }
+     
+.tarotcardshover {
+         width: 95%;
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         grid-template-rows: repeat(5, -40%);
+         grid-auto-flow: dense;
+         grid-gap: -40%;
+         }
+
+.hovertarotcard{
+         display: grid;
+         grid-auto-flow: row;
+         width: 200px;
+         height: 300px;
+         perspective: 300px;
+         scale: .5;
+         transition: 1s;
+         transform-style: preserve-3d;
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         background-image: url(TarotCardBacking_backwards.jpg);
+         z-index: 1;
+         margin-bottom: -100px;
+             }
+    
+.hovertarotcard img {
+        width: 200px;
+        height: 300px;
+    }
+     
+.hovertarotcard:hover {
+         transform: scale(2);
+         transition: transform 1s;
+         position: relative;
+         background-image: url(TarotCardBacking_smallweb.jpg);
+         z-index: 1000;
+             }
+     
+.flipbutton {
+         position: absolute;
+         top: 90%;
+         left: 40%;
+         z-index: 300;
+             }
+     
+.flipDeck {
+         background-color: turquoise;
+         font-family: 'Josefin Sans';
+         font-weight: '400';
+         font-size: 30px;
+         padding: 1rem;
+         color: white;
+         opacity: .9;
+         z-index: 1500;
+         width: 400px;
+             }
+}
+
+/* Styles for landscape screens wider than 600px and smaller than 1000px */
+@media (min-width: 600px) and (max-width: 999px) {
+.tarotdeckhover {
+    background-image: url(waves-2.jpg);
+    width: cover;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    overflow: scroll;
+    }
+
+.flipbutton {
+    position: absolute;
+    margin-top: 5%;
+    left: 30%;
+    z-index: 300;
+    }
+         
+.flipDeck {
+    background-color: turquoise;
+    font-family: 'Josefin Sans';
+    font-weight: '400';
+    font-size: 30px;
+    padding: 1rem;
+    color: white;
+    opacity: .9;
+    z-index: 1500;
+    width: 300px;
+    margin-bottom: 10%;
+    }
+     
+.hovercards-container {
+    width: cover;
+    height: auto;
+    box-sizing: border-box;
+    overflow: scroll;
+    margin-bottom: 5%;
+    }
+     
+.tarotcardshover {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, -50%);    
+    position: absolute;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+    margin-left: 5%;
+    overflow: scroll;
+    }
+     
+.hovertarotcard {
+    width: 125px;
+    height: 250px;
+    perspective: 300px;
+    scale: .45;
+    transition: 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: url(TarotCardBacking_backwards.jpg);
+    z-index: 1;
+    margin-bottom: -150px;
+             }
+     
+.hovertarotcard:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+    position: relative;
+    background-image: url(TarotCardBacking_smallweb.jpg);
+    z-index: 1000;
+             }
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 599px) {
+.tarotdeckhover {
+     background-image: url(waves-2.jpg);
+     width: 100%;
+     height: 100vh;
+     background-repeat: no-repeat;
+     margin-bottom: 100px;
+     position: relative;
+     overflow: scroll; 
+     align-self: center;
+     align-content: center;
+     justify-self: center;
+     box-sizing: border-box;
+     }
+ 
+.hovercards-container {
+     margin-bottom: 10%;
+     width: 95%;
+     height: 100vh;
+     box-sizing: border-box;
+     margin-top: 5%;
+     overflow: scroll;
+     margin-right: 2%;
+     margin-left: 2%;
+     }
+ 
+.tarotcardshover {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(10, .50);
+     grid-auto-flow: dense;
+     grid-gap: -50%;
+     margin-bottom: 100px;
+     }
+ 
+.hovertarotcard{
+     width: 100px;
+     height: 150px;
+     perspective: 300px;
+     scale: .4;
+     transition: 1s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     background-image: url(TarotCardBacking_backwards.jpg);
+     z-index: 1;
+     margin-bottom: -50px;
+         }
+ 
+.hovertarotcard:hover {
+     transform: scale(1.5);
+     transition: transform 1s;
+     position: relative;
+     background-image: url(TarotCardBacking_smallweb.jpg);
+     z-index: 1000;
+         }
+ 
+.overlaybutton {
+     position: absolute;
+     top: 90%;
+     width: 100%;
+     z-index: 1500;
+         }
+ 
+.flipDeck {
+     background-color: turquoise;
+     font-family: 'Josefin Sans';
+     font-weight: '400';
+     font-size: 20px;
+     padding: 1rem;
+     color: white;
+     opacity: .8;
+     z-index: 1500;
+     width: 100%;
+         }
+}
 /*End of Section1*/
 
 /*Start of Section2*/
-/* Styles for screens wider than 1024px */
-@media (min-width: 1024px) {
+/* Styles for landscape screens wider than 1400px */
+@media (min-width: 1400px) and (orientation: landscape){
 .flipscene {
-    background-image: url(picnictablebg.png);
+    background-image: url(waves-2.jpg);
     width: 100%;
-    height: 1000px;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-repeat: repeat-y;
     margin-bottom: 400px; 
     position: relative;
     display: grid;
-    overflow:scroll;        
+    overflow:scroll;
+    background-size: cover;      
     }
 
 .flippedcards-container {
     padding: 10px;
-    margin-bottom: 50px;
+    margin-top: 5%;
     width: 100%;
     height: 90vh;
+    margin-left: 5%;
         }
 
 .tarotcardsflipped {
@@ -465,7 +971,6 @@ header{
     grid-template-rows: repeat(4, -33%);
     grid-auto-flow: dense;
     grid-gap: -33%;
-    margin-bottom: 100px;
             }
 
 .tarotcardflipped{
@@ -474,12 +979,11 @@ header{
    perspective: 300px;
    transition: 1s;
    transform-style: preserve-3d;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    background-image: url(TarotCardBacking.jpg);
    z-index: 1;
-   margin-left: 10px;
    margin-bottom: -100px;
 }
+
 
 .tarotcardflipped:hover .flip-card-inner-flipped {
     transform: rotateY(360deg);
@@ -499,6 +1003,12 @@ header{
     background-image: url(TarotCardBacking_backwards.jpg);
 }
 
+.flip-card-inner-flipped img {
+    width: 100%;
+    height: 100%;
+    object-fit: 100%;
+}
+
 .flip-card-front-flipped, .flip-card-back-flipped {
     position: absolute;
     width: 200px;
@@ -509,53 +1019,908 @@ header{
 
 .FocusYourEnergy {
     background-color: turquoise;
-    position:relative;
+    position:absolute;
     font-family: 'Josefin Sans';
     font-weight: '400';
     font-size: 30px;
     padding: 1rem;
     color: white;
     opacity: .9;
+    margin-top: 20px;
+    margin-left: 40%;
 }
 }
+
+/* Styles for portrait screens wider than 1400px */
+@media (min-width: 1000px) and (orientation: portrait){
+    .flipscene {
+        background-image: url(waves-2.jpg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        display: grid;
+        overflow:scroll;
+        background-size: cover;      
+        }
+    
+    .flippedcards-container {
+        padding: 10px;
+        margin-top: 5%;
+        width: 100%;
+        height: 90vh;
+        margin-left: 5%;
+            }
+    
+    .tarotcardsflipped {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-auto-flow: dense;
+                }
+    
+    .tarotcardflipped{
+       width: 200px;
+       height: 300px;
+       perspective: 300px;
+       transition: 1s;
+       transform-style: preserve-3d;
+       background-image: url(TarotCardBacking.jpg);
+       z-index: 1;
+       margin-bottom: -60px;
+    }
+    
+    
+    .tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1000;
+    }
+    
+    .flip-card-inner-flipped{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+    }
+    
+.flip-card-inner-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: 100%;
+    }
+    
+.flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+.FocusYourEnergy {
+        background-color: turquoise;
+        position:absolute;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        padding: 1rem;
+        color: white;
+        opacity: .9;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+/* Styles for landscape screens wider than 1400px */
+@media (min-width: 1200px) and (max-width: 1399px) and (orientation: landscape){
+    .flipscene {
+        background-image: url(waves-2.jpg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        display: grid;
+        overflow:scroll;
+        background-size: cover;      
+        }
+    
+    .flippedcards-container {
+        padding: 10px;
+        margin-top: 5%;
+        width: 100%;
+        height: 90vh;
+        margin-left: 5%;
+            }
+    
+    .tarotcardsflipped {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, -33%);
+        grid-auto-flow: dense;
+        grid-gap: -33%;
+                }
+    
+    .tarotcardflipped{
+       width: 200px;
+       height: 300px;
+       perspective: 300px;
+       transition: 1s;
+       transform-style: preserve-3d;
+       background-image: url(TarotCardBacking.jpg);
+       z-index: 1;
+       margin-bottom: -100px;
+    }
+    
+    
+    .tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1000;
+    }
+    
+    .flip-card-inner-flipped{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+    }
+
+    .flip-card-inner-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: 100%;
+    }
+    
+    .flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .FocusYourEnergy {
+        background-color: turquoise;
+        position:absolute;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        padding: 1rem;
+        color: white;
+        opacity: .9;
+        margin-top: 20px;
+        margin-left: 40%;
+    }
+}
+
+/* Styles for portrait screens wider than 1400px */
+@media (min-width: 800px) and (max-width: 999px) and (orientation: portrait){
+    .flipscene {
+        background-image: url(waves-2.jpg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        display: grid;
+        overflow:scroll;
+        background-size: cover;      
+        }
+    
+    .flippedcards-container {
+        padding: 10px;
+        margin-top: 3%;
+        width: 100%;
+        height: 90vh;
+        margin-left: 5%;
+            }
+    
+    .tarotcardsflipped {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-auto-flow: dense;
+                }
+    
+    .tarotcardflipped{
+       width: 200px;
+       height: 300px;
+       perspective: 300px;
+       transition: 1s;
+       transform-style: preserve-3d;
+       background-image: url(TarotCardBacking.jpg);
+       z-index: 1;
+       margin-bottom: -80px;
+    }
+    
+    
+    .tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1000;
+    }
+    
+    .flip-card-inner-flipped{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+    }
+    
+.flip-card-inner-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: 100%;
+    }
+    
+.flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+.FocusYourEnergy {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 30px;
+        padding: 1rem;
+        color: white;
+        opacity: .9;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+/* Styles for landscape screens wider than 1000px and smaller than 1200px */
+@media (min-width: 1000px) and (max-width: 1199px) and (orientation: landscape){
+.flipscene {
+        background-image: url(waves-2.jpg);
+        width: 100%;
+        height: 1000px;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        overflow:scroll;        
+        }
+    
+.flippedcards-container {
+        padding: 10px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 80vh;
+        z-index: 1;
+            }
+    
+.tarotcardsflipped {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-auto-flow: dense;
+        z-index: 1;
+                }
+    
+.tarotcardflipped{
+       width: 200px;
+       height: auto;
+       perspective: 300px;
+       transition: 1s;
+       transform-style: preserve-3d;
+       background-image: url(TarotCardBacking.jpg);
+       z-index: 1;
+       margin-left: 10px;
+       margin-bottom: -120%;
+    }
+    
+.tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1000;
+    }
+
+.flip-card-back-flipped:hover .flip-card-back-flipped {
+        z-index: 2000;
+    }
+    
+.flip-card-inner-flipped{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1;
+        background-size: cover;
+    }
+    
+.flip-card-inner-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: 100%;
+    }
+
+.flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 1;
+    }
+
+.overlaybutton {
+        position: absolute;
+        top: 50%;
+        z-index: 1000;
+        width: 100%;
+    }
+.FocusYourEnergy {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 20px;
+        padding: 1rem;
+        color: white;
+        opacity: .9;
+        width: 100%;
+    }
+}
+
+/* Styles for landscape screens wider than 800px and smaller than 1000px */
+@media (min-width: 800px) and (max-width: 999px) and (orientation: landscape){
+.flipscene {
+                background-image: url(waves-2.jpg);
+                width: 100%;
+                height: 1000px;
+                background-repeat: repeat-y;
+                margin-bottom: 400px; 
+                position: relative;
+                overflow:scroll;        
+                }
+            
+.flippedcards-container {
+                padding: 10px;
+                margin-bottom: 50px;
+                width: 100%;
+                height: 80vh;
+                z-index: 1;
+                overflow: scroll;
+                    }
+            
+.tarotcardsflipped {
+                width: 95%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                grid-auto-flow: dense;
+                z-index: 1;
+                        }
+            
+.tarotcardflipped{
+               width: 175px;
+               height: auto;
+               perspective: 300px;
+               transition: 1s;
+               transform-style: preserve-3d;
+               box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+               background-image: url(TarotCardBacking.jpg);
+               z-index: 1;
+               margin-left: 10px;
+               margin-bottom: -80%;
+            }
+            
+.tarotcardflipped:hover .flip-card-inner-flipped {
+                transform: rotateY(360deg);
+                background-image: url(TarotCardBacking_backwards.jpg);
+                z-index: 1000;
+            }
+
+.flip-card-back-flipped:hover .flip-card-back-flipped {
+                z-index: 2000;
+            }
+            
+.flip-card-inner-flipped{
+                position: relative;
+                height: 300px;
+                width: 200px;
+                transition: .6s;
+                transform: rotateY(180deg);
+                transform-style: preserve-3d;
+                opacity:100;
+                background-image: url(TarotCardBacking_backwards.jpg);
+                z-index: 1;
+            }
+            
+.flip-card-front-flipped, .flip-card-back-flipped {
+                position: absolute;
+                width: 200px;
+                height: 300px;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                z-index: 1;
+            }
+
+.flip-card-inner-flipped img {
+                width: 100%;
+                height: 100%;
+                object-fit: 100%;
+            }
+        
+.FocusYourEnergy {
+                background-color: turquoise;
+                position:relative;
+                font-family: 'Josefin Sans';
+                font-weight: '400';
+                font-size: 20px;
+                padding: 1rem;
+                color: white;
+                opacity: .9;
+                width: 100%;
+            }
+}
+
+/* Styles for portrait screens wider than 600px */
+@media (min-width: 600px) and (max-width: 799px) and (orientation: portrait){
+    .flipscene {
+        background-image: url(waves-2.jpg);
+        width: cover;
+        height: 100vh;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        display: grid;
+        overflow:scroll;
+        background-size: cover;      
+        }
+    
+    .flippedcards-container {
+        padding: 10px;
+        margin-top: 3%;
+        width: 100%;
+        height: 90vh;
+        margin-left: 5%;
+            }
+    
+    .tarotcardsflipped {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(225px, 1fr));
+        grid-auto-flow: dense;
+                }
+    
+    .tarotcardflipped{
+       width: 150px;
+       height: 225px;
+       perspective: 300px;
+       transition: 1s;
+       transform-style: preserve-3d;
+       background-image: url(TarotCardBacking.jpg);
+       z-index: 1;
+       margin-bottom: -80px;
+       background-size: cover;
+    }
+    
+    .tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1000;
+        background-size: cover;
+    }
+    
+    .flip-card-inner-flipped{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        background-size: cover;
+        object-fit: contain;
+    }
+    
+.flip-card-back-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+.flip-card-front-flipped img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+    
+.flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+.FocusYourEnergy {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 25px;
+        padding: .5rem;
+        color: white;
+        opacity: .9;
+        margin-top: 20px;
+        width: 100vw;
+    }
+}
+
+/*Styles for landscape screens wider than 600px and smaller than 800px*/
+@media (min-width: 600px) and (max-width: 799px) and (orientation: landscape){
+.flipscene {
+    background-image: url(waves-2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: repeat-y;
+    margin-bottom: 400px; 
+    position: relative;
+    overflow:scroll;
+    background-size: cover;        
+}
+                            
+.flippedcards-container {
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 80vh;
+    z-index: 1;
+    overflow: scroll;
+}
+                            
+.tarotcardsflipped {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: dense;
+    z-index: 1;
+}
+                            
+.tarotcardflipped{
+    width: 100px;
+    height: auto;
+    perspective: 300px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    z-index: 1;
+    margin-left: 10px;
+    margin-bottom: -80%;
+}
+                            
+.tarotcardflipped:hover .flip-card-inner-flipped {
+    transform: rotateY(360deg);
+    background-image: url(TarotCardBacking_backwards.jpg);
+    z-index: 999;
+    background-size: cover;
+    object-fit: contain;
+}
+                        
+.flip-card-back-flipped:hover {
+    z-index: 2000;
+}
+
+                            
+.flip-card-inner-flipped{
+    position: relative;
+    height: 225px;
+    width: 150px;
+    transition: .6s;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    opacity:100;
+    background-image: url(TarotCardBacking_backwards.jpg);
+    z-index: 1;
+    background-size: cover;
+}
+
+.flip-card-inner-flipped img {
+    width: 100%;
+    height: 100%;
+    object-fit: 100%;
+}
+                            
+.flip-card-front-flipped, .flip-card-back-flipped {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+                        
+.focusbutton {
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    width: 100%;
+}
+
+.FocusYourEnergy {
+    background-color: turquoise;
+    position:relative;
+    font-family: 'Josefin Sans';
+    font-weight: '400';
+    font-size: 20px;
+    padding: .5rem;
+    color: white;
+    opacity: .9;
+    width: 100%;
+}
+}
+
+/* Styles for portrait screens smaller than 600px */
+@media (max-width: 599px) and (orientation: portrait){
+    .flipscene {
+        background-image: url(waves-2.jpg);
+        width: cover;
+        height: 100vh;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        display: grid;
+        overflow:scroll;
+        background-size: cover;      
+        }
+    
+    .flippedcards-container {
+        padding: 10px;
+        margin-top: 3%;
+        width: 100%;
+        height: 90vh;
+        margin-left: 5%;
+            }
+    
+.tarotcardsflipped {
+        position: absolute;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-flow: dense;
+                }
+    
+.tarotcardflipped{
+       width: 150px;
+       height: 225px;
+       perspective: 300px;
+       transition: 1s;
+       transform-style: preserve-3d;
+       background-image: url(TarotCardBacking.jpg);
+       z-index: 1;
+       margin-bottom: -150px;
+       background-size: cover;
+    }
+    
+.tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1000;
+        background-size: cover;
+    }
+    
+.flip-card-inner-flipped{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        background-size: cover;
+        object-fit: contain;
+    }
+    
+.flip-card-back-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+.flip-card-front-flipped img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+    
+.flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+.FocusYourEnergy {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 15px;
+        padding: .5rem;
+        color: white;
+        opacity: .9;
+        margin-top: 20px;
+        width: 100vw;
+    }
+}
+
+/*Styles for landscape screens smaller than 600px and smaller than 800px*/
+@media (max-width: 599px) and (orientation: landscape) {
+    .flipscene {
+        background-image: url(waves-2.jpg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-y;
+        margin-bottom: 400px; 
+        position: relative;
+        overflow:scroll;
+        background-size: cover;        
+    }
+                                
+    .flippedcards-container {
+        padding: 10px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 80vh;
+        z-index: 1;
+        overflow: scroll;
+    }
+                                
+    .tarotcardsflipped {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-auto-flow: dense;
+        z-index: 1;
+    }
+                                
+    .tarotcardflipped{
+        width: 100px;
+        height: auto;
+        perspective: 300px;
+        transition: 1s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 10px;
+        margin-bottom: -80%;
+    }
+                                
+    .tarotcardflipped:hover .flip-card-inner-flipped {
+        transform: rotateY(360deg);
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 999;
+        background-size: cover;
+        object-fit: contain;
+    }
+                            
+    .flip-card-back-flipped:hover {
+        z-index: 2000;
+    }
+    
+                                
+    .flip-card-inner-flipped{
+        position: relative;
+        height: 225px;
+        width: 150px;
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        z-index: 1;
+        background-size: cover;
+    }
+    
+    .flip-card-inner-flipped img {
+        width: 100%;
+        height: 100%;
+        object-fit: 100%;
+    }
+                                
+    .flip-card-front-flipped, .flip-card-back-flipped {
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 1;
+    }
+                            
+    .focusbutton {
+        position: absolute;
+        top: 50%;
+        z-index: 1000;
+        width: 100%;
+    }
+    
+    .FocusYourEnergy {
+        background-color: turquoise;
+        position:relative;
+        font-family: 'Josefin Sans';
+        font-weight: '400';
+        font-size: 20px;
+        padding: .5rem;
+        color: white;
+        opacity: .9;
+        width: 100%;
+    }
+}
+
+
+
 /*EndofSection2*/
 
 /*StartofSection3NEW*/
-/* Styles for screens wider than 1024px */
-@media (min-width: 1024px) {
+/*SHUFFLE SCENE*/
+/* Styles for landscape screens wider than 1600px */
+@media (min-width: 1600px) and (orientation: landscape) {
 .shufflescene {
-    background-image: url(picnictablebg.png);
-    width: 1600px;
-    height: 1000px;
+    background-image: url(SunsetFlow-blue.jpg);
+    width: cover;
+    height: 100vh;
     background-repeat: no-repeat;
     position: relative;
     display: grid;
     grid-gap: -33%;
-    overflow:scroll;        
+    overflow:scroll;
+    background-size: cover;        
     }
 
 .tarotcardshuffle-container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, -33%);
     grid-auto-flow: dense;
-    grid-gap: -33%;
     position: relative;
     width: 90vw;
-    height: 90vh; 
-    max-width: 1400px;
-    max-height: 600px;
-    margin-top: -100px;
-    margin-left: 40px;
+    height: 80vh; 
+    margin-top: 3%;
+    margin-left: 5%;
   }
 
 .tarotcardshuffle-Cards {
-    width: 95%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, -50%);
     grid-auto-flow: dense;
     grid-gap: -50%;
+    margin-right: 5%;
     }
 
 .tarotcardshuffle{
@@ -568,7 +1933,6 @@ header{
     z-index: 1;
     margin-left: 10px;;
     }
-
 
 .shuffleactive .tarotcardshuffle-container {
     display: flex;
@@ -614,7 +1978,7 @@ header{
         color: white;
         opacity: .9;
         align-items: center;
-        margin-left: 30%;
+        margin-left: 35%;
         margin-top: 10px;
       }
 
@@ -632,43 +1996,747 @@ header{
 
 
 .shuffleDescription {
-    transform:scale(100%);
     font-size: 30px;
     color: salmon;
-    text-shadow: 30px, 30px, 30px, black;
-    line-height: 1.4rem;
-    background-color: white;
+    line-height: 1.7rem;
     padding: 10px;
-   justify-content: center;
-    padding-left: 30%;
+    justify-self: center;
+    align-self: center;
+    padding-left: 35%;
     font-weight: bold;
+    font-family: 'Josefin Sans';
 }
 }
+
+/* Styles for portrait screens wider than 1000px */
+@media (min-width: 1000px) and (orientation: portrait) {
+    .shufflescene {
+        background-image: url(SunsetFlow-blue.jpg);
+        width: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        position: relative;
+        display: grid;
+        grid-gap: -33%;
+        overflow:scroll;
+        background-size: cover;        
+        }
+    
+    .tarotcardshuffle-container {
+        display: grid;
+        grid-auto-flow: dense;
+        position: relative;
+        width: 90vw;
+        height: 80vh; 
+        margin-top: 1%;
+        margin-left: 5%;
+      }
+    
+    .tarotcardshuffle-Cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-auto-flow: dense;
+        margin-right: 5%;
+        }
+    
+    .tarotcardshuffle{
+        width: 200px;
+        height: 300px;
+        perspective: 300px;
+        transition: 2s;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-image: url(TarotCardBacking.jpg);
+        z-index: 1;
+        margin-left: 10px;
+        margin-top: -50px;
+        }
+    
+    .shuffleactive .tarotcardshuffle-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        margin: 0 auto;
+        }
+    
+    .shuffle-active .tarotcardshuffle {
+        position: absolute;
+        }
+        
+    .shuffle-card-inner-shuffled{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        }
+    
+    .shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    
+    .shuffleButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 30px;
+            padding: 1rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+            margin-left: 5%;
+            margin-top: 3%;
+          }
+    
+    .gatherButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 30px;
+            padding: 1rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+          }
+    
+    
+    .shuffleDescription {
+        font-size: 30px;
+        color: purple;
+        line-height: 1.7rem;
+        padding: 10px;
+        justify-self: center;
+        align-self: center;
+        margin-left: 5%;
+        font-weight: bold;
+        font-family: 'Josefin Sans';
+    }
+    }
+
+/* Styles for landscape screens wider than 1300px */
+@media (min-width: 1300px) and (max-width: 1599px) and (orientation: landscape) {
+    .shufflescene {
+        background-image: url(SunsetFlow-blue.jpg);
+        width: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        position: relative;
+        display: grid;
+        grid-gap: -33%;
+        overflow:scroll;
+        background-size: cover;        
+        }
+    
+.tarotcardshuffle-container {
+        display: grid;
+        grid-auto-flow: dense;
+        position: relative;
+        width: 90vw;
+        height: 80vh; 
+        margin-top: 3%;
+        margin-left: 5%;
+      }
+    
+.tarotcardshuffle-Cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, -50%);
+        grid-auto-flow: dense;
+        grid-gap: -50%;
+        }
+    
+.tarotcardshuffle{
+        width: 200px;
+        height: 300px;
+        perspective: 300px;
+        transition: 2s;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-image: url(TarotCardBacking.jpg);
+        z-index: 1;
+        margin-left: 10px;
+        margin-bottom: -200px;
+        }
+    
+.shuffleactive .tarotcardshuffle-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        width: 1400px;
+        height: 600px;
+        margin: 0 auto;
+        }
+    
+.shuffle-active .tarotcardshuffle {
+        position: absolute;
+        }
+        
+.shuffle-card-inner-shuffled{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        }
+
+.shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    
+.shuffleButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 25px;
+            padding: 1rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+            margin-left: 35%;
+            margin-top: 10px;
+          }
+    
+.gatherButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 25px;
+            padding: 1rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+          }
+    
+.shuffleDescription {
+        font-size: 25px;
+        color: darkmagenta;
+        line-height: 1.5rem;
+        padding: 10px;
+        justify-self: center;
+        align-self: center;
+        padding-left: 35%;
+        font-weight: bold;
+        font-family: 'Josefin Sans';
+    }
+}
+
+/* Styles for landscape screens between 1000px and 1300px */
+@media (min-width: 1000px) and (max-width: 1299px) and (orientation: landscape) {
+    .shufflescene {
+        background-image: url(SunsetFlow-blue.jpg);
+        width: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        position: relative;
+        display: grid;
+        grid-gap: -33%;
+        overflow:scroll;
+        background-size: cover;        
+        }
+    
+.tarotcardshuffle-container {
+        display: grid;
+        grid-auto-flow: dense;
+        position: relative;
+        width: 90vw;
+        height: 80vh;
+        margin-left: 2%;
+      }
+    
+.tarotcardshuffle-Cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, -50%);
+        grid-auto-flow: dense;
+        grid-gap: -50%;
+        }
+    
+.tarotcardshuffle{
+        width: 200px;
+        height: 300px;
+        perspective: 300px;
+        transition: 2s;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-image: url(TarotCardBacking.jpg);
+        z-index: 1;
+        margin-left: 10px;
+        margin-bottom: -210px;
+        }
+    
+.shuffleactive .tarotcardshuffle-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        width: 1400px;
+        height: 600px;
+        margin: 0 auto;
+        }
+    
+.shuffle-active .tarotcardshuffle {
+        position: absolute;
+        }
+        
+.shuffle-card-inner-shuffled{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        }
+
+.shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    
+.shuffleButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 20px;
+            padding: .75rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+            margin-left: 25%;
+            margin-top: 10px;
+          }
+    
+.gatherButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 20px;
+            padding: .75rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+          }
+    
+.shuffleDescription {
+        font-size: 20px;
+        color: darkmagenta;
+        line-height: 1.5rem;
+        padding: 10px;
+        justify-self: center;
+        align-self: center;
+        padding-left: 25%;
+        font-weight: bold;
+        font-family: 'Josefin Sans';
+    }
+}
+
+/* Styles for landscape screens between 700px and 1000px */
+@media (min-width: 700px) and (max-width: 999px) {
+.shufflescene {
+        background-image: url(SunsetFlow-blue.jpg);
+        width: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        position: relative;
+        display: grid;
+        grid-gap: -33%;
+        overflow:scroll;
+        background-size: cover;        
+        }
+    
+.tarotcardshuffle-container {
+        display: grid;
+        grid-auto-flow: dense;
+        position: relative;
+        width: 90vw;
+        height: 80vh;
+        margin-left: 2%;
+      }
+    
+.tarotcardshuffle-Cards {
+        width: 90%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-auto-flow: dense;
+        }
+    
+.tarotcardshuffle{
+        width: 150px;
+        height: 225px;
+        perspective: 300px;
+        transition: 2s;
+        background-image: url(TarotCardBacking.jpg);
+        z-index: 1;
+        margin-left: 10px;
+        margin-bottom: -150px;
+        background-size: cover;
+        }
+
+.shuffleactive .tarotcardshuffle-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        margin: 0 auto;
+        }
+    
+.shuffle-active .tarotcardshuffle {
+        position: absolute;
+        }
+        
+.shuffle-card-inner-shuffled{
+        position: relative;
+        height: 225px;
+        width: 150px;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        opacity:100;
+        background-image: url(TarotCardBacking_backwards.jpg);
+        background-size: cover;
+        }
+
+.shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+            position: absolute;
+            width: 150px;
+            height: 225px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    
+.shuffleButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 20px;
+            padding: .75rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+            margin-left: 5%;
+            margin-top: 10px;
+          }
+    
+.gatherButton {
+            background-color: turquoise;
+            position:relative;
+            font-family: 'Josefin Sans';
+            font-weight: '400';
+            font-size: 20px;
+            padding: .75rem;
+            color: white;
+            opacity: .9;
+            align-items: center;
+          }
+    
+.shuffleDescription {
+        font-size: 20px;
+        color: darkmagenta;
+        line-height: 1.2rem;
+        padding: 10px;
+        justify-self: center;
+        align-self: center;
+        padding-left: 5%;
+        font-weight: bold;
+        font-family: 'Josefin Sans';
+    }
+}
+
+/* Styles for landscape screens larger than 500px smaller than 700x*/
+@media (min-width: 500px) and (max-width: 699px) {
+    .shufflescene {
+            background-image: url(SunsetFlow-blue.jpg);
+            width: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            position: relative;
+            display: grid;
+            grid-gap: -33%;
+            overflow:scroll;
+            background-size: cover;        
+            }
+        
+    .tarotcardshuffle-container {
+            display: grid;
+            grid-auto-flow: dense;
+            position: relative;
+            width: 90vw;
+            height: 80vh;
+            margin-left: 2%;
+          }
+        
+    .tarotcardshuffle-Cards {
+            width: 90%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-auto-flow: dense;
+            }
+        
+    .tarotcardshuffle{
+            width: 100px;
+            height: 150px;
+            perspective: 300px;
+            transition: 2s;
+            background-image: url(TarotCardBacking.jpg);
+            z-index: 1;
+            margin-left: 10px;
+            margin-bottom: -150px;
+            background-size: cover;
+            }
+    
+    .shuffleactive .tarotcardshuffle-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            margin: 0 auto;
+            }
+        
+    .shuffle-active .tarotcardshuffle {
+            position: absolute;
+            }
+            
+    .shuffle-card-inner-shuffled{
+            position: relative;
+            height: 150px;
+            width: 100px;
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+            opacity:100;
+            background-image: url(TarotCardBacking_backwards.jpg);
+            background-size: cover;
+            }
+    
+    .shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+                position: absolute;
+                width: 100px;
+                height: 150px;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+        
+    .shuffleButton {
+                background-color: turquoise;
+                position:relative;
+                font-family: 'Josefin Sans';
+                font-weight: '400';
+                font-size: 15px;
+                padding: .5rem;
+                color: white;
+                opacity: .9;
+                align-items: center;
+                margin-left: 5%;
+                margin-top: 10px;
+              }
+        
+    .gatherButton {
+                background-color: turquoise;
+                position:relative;
+                font-family: 'Josefin Sans';
+                font-weight: '400';
+                font-size: 15px;
+                padding: .5rem;
+                color: white;
+                opacity: .9;
+                align-items: center;
+              }
+        
+    .shuffleDescription {
+            font-size: 15px;
+            color: black;
+            line-height: 1rem;
+            padding: 10px;
+            justify-self: center;
+            align-self: center;
+            padding-left: 5%;
+            font-weight: bold;
+            font-family: 'Josefin Sans';
+        }
+    }
+
+/* Styles for screens smaller than 500px*/    
+@media (max-width: 499px) {
+        .shufflescene {
+                background-image: url(SunsetFlow-blue.jpg);
+                width: cover;
+                height: 100vh;
+                background-repeat: no-repeat;
+                position: relative;
+                display: grid;
+                grid-gap: -33%;
+                overflow:scroll;
+                background-size: cover;        
+                }
+            
+        .tarotcardshuffle-container {
+                display: grid;
+                grid-auto-flow: dense;
+                position: relative;
+                width: 90vw;
+                height: 80vh;
+                margin-left: 2%;
+              }
+            
+        .tarotcardshuffle-Cards {
+                width: 90%;
+                height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(10, 1fr);
+                grid-auto-flow: dense;
+                }
+            
+        .tarotcardshuffle{
+                width: 100px;
+                height: 150px;
+                perspective: 300px;
+                transition: 2s;
+                background-image: url(TarotCardBacking.jpg);
+                z-index: 1;
+                margin-left: 10px;
+                margin-bottom: -175px;
+                background-size: cover;
+                }
+        
+        .shuffleactive .tarotcardshuffle-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: relative;
+                margin: 0 auto;
+                }
+            
+        .shuffle-active .tarotcardshuffle {
+                position: absolute;
+                }
+                
+        .shuffle-card-inner-shuffled{
+                position: relative;
+                height: 150px;
+                width: 100px;
+                transform: rotateY(180deg);
+                transform-style: preserve-3d;
+                opacity:100;
+                background-image: url(TarotCardBacking_backwards.jpg);
+                background-size: cover;
+                }
+        
+        .shuffle-card-front-shuffled, .shuffle-card-back-shuffle {
+                    position: absolute;
+                    width: 100px;
+                    height: 150px;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+            
+        .shuffleButton {
+                    background-color: turquoise;
+                    position:relative;
+                    font-family: 'Josefin Sans';
+                    font-weight: '400';
+                    font-size: 15px;
+                    padding: .5rem;
+                    color: white;
+                    opacity: .9;
+                    align-items: center;
+                    margin-left: 5%;
+                    margin-top: 10px;
+                  }
+            
+        .gatherButton {
+                    background-color: turquoise;
+                    position:relative;
+                    font-family: 'Josefin Sans';
+                    font-weight: '400';
+                    font-size: 15px;
+                    padding: .5rem;
+                    color: white;
+                    opacity: .9;
+                    align-items: center;
+                  }
+            
+        .shuffleDescription {
+                font-size: 10px;
+                color: black;
+                line-height: 1rem;
+                justify-self: center;
+                align-self: center;
+                padding-left: 5%;
+                font-weight: bold;
+                font-family: 'Josefin Sans';
+            }
+        }
+
+
+
+
+
 /*StartofSection4*/
-/* Styles for screens wider than 1024px */
-@media (min-width: 1024px) {
+/* Styles for screens wider than 2000px */
+@media (min-width: 2000px) and (orientation: landscape) {
 .readingsCard {
-    background-image: url(picnictablebg.png);
-    background-size: 1900px;
+    background-image: url(beachstars.jpg);
+    background-repeat: no-repeat;
+    width: auto;
     height: 100vh;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: auto auto;
-    margin-bottom: 400px;
-    margin-top: 400px;
+    margin-bottom: 200px;
+    align-self: center;
+    margin-left: 4%;
+    background-size: cover;
 }
 
 .tarotcardreadingimage {
     position: relative;
-    width: 480px;
-    height: 720px;
     transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
-    margin-left: 100px;
-    margin-top: 100px;
-    box-shadow: 10px 10px 10px gray;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
+.tarotcardreadingimage img {
+    height: 90vh;
+    width: auto;
+}
 .cardDetailsContainer {
     display: flex;
     flex-direction: column;
@@ -678,41 +2746,388 @@ header{
 }
 
 .readingsDescription {
-    font-size: 60px;
-    color: purple;
-    text-shadow: 10px 10px 10px gray;
+    font-size: 100px;
+    color: violet;
     line-height: 8rem;
     font-weight: bold;
     margin-top: 60px;
     margin-left: 350 px;
     padding-left: 50px;
+    font-family: 'Josefin Sans';
 }
 
 .description {
-    font-size: 20px;
+    font-size: 25px;
     color: #000000;
     font-weight: 400;
     text-align: left;
-    background-color: mediumaquamarine;
+    background-color: skyblue;
     padding: 30px;
-    box-shadow: 10px 10px 10px gray;
-    margin-right: 50px;
+    margin-right: 250px;
     background-blend-mode: screen;
     opacity: 80%;
+    font-family: 'Josefin Sans';
+    margin-top: -30px;
 }
 
 .drawAnother {
     background-color: salmon;
-    padding: 30px;
-    margin-top: 10px; /* Adjust this value as needed */
+    padding: 20px;
+    margin-top: 200px; /* Adjust this value as needed */
     font-family: 'Josefin Sans';
     font-weight: 400;
     font-size: 30px;
     color: white;
-    box-shadow: 10px 10px 10px gray;
     margin: 50px;
 }
 }
+
+/* Styles for screens wider than 1024px and smaller than 2000px*/
+@media (min-width: 1024px) and (max-width: 1999px) and (orientation: landscape) {
+    .readingsCard {
+        background-image: url(beachstars.jpg);
+        background-clip: content-box;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 200px;
+        background-size: cover;
+    }
+    
+    .tarotcardreadingimage {
+        position: relative;
+        transition: transform 1s ease-in-out;
+        transform-style: preserve-3d;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .tarotcardreadingimage img {
+        height: 80vh;
+        width: auto;
+    }
+    
+    .cardDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 100px; /* Adjust this value as needed */
+    }
+    
+    .readingsDescription {
+        font-size: 70px;
+        color: violet;
+        line-height: 6rem;
+        font-weight: bold;
+        margin-top: 60px;
+        margin-left: 350 px;
+        padding-left: 50px;
+        font-family: 'Josefin Sans';
+    }
+    
+    .description {
+        font-size: 20px;
+        color: #000000;
+        font-weight: 400;
+        text-align: left;
+        background-color: skyblue;
+        padding: 30px;
+        box-shadow: 10px 10px 10px gray;
+        margin-right: 50px;
+        background-blend-mode: screen;
+        opacity: 80%;
+        font-family: 'Josefin Sans';
+        margin-top: -30px;
+    }
+    
+    .drawAnother {
+        background-color: salmon;
+        padding: 20px;
+        margin-top: 20px; /* Adjust this value as needed */
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 30px;
+        color: white;
+        margin: 50px;
+    }
+    }
+
+/* Styles for screens wider than 600px and smaller than 1024px*/
+@media (min-width: 800px) and (max-width: 1023px) and (orientation: landscape) {
+.readingsCard {
+        background-image: url(beachstars.jpg);
+        background-clip: content-box;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 200px;
+        background-size: cover;
+    }
+    
+    .tarotcardreadingimage {
+        position: relative;
+        transition: transform 1s ease-in-out;
+        transform-style: preserve-3d;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .tarotcardreadingimage img{
+        height: 85vh;
+    }
+    
+    .cardDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 10%; /* Adjust this value as needed */
+    }
+    
+    .readingsDescription {
+        font-size: 40px;
+        color: violet;
+        line-height: 3rem;
+        font-weight: bold;
+        margin-left: 2%;
+        padding-left: 50px;
+        font-family: 'Josefin Sans';
+    }
+    
+    .description {
+        font-size: 15px;
+        color: #000000;
+        font-weight: 400;
+        text-align: left;
+        background-color: skyblue;
+        padding: 30px;
+        margin-right: 50px;
+        background-blend-mode: screen;
+        opacity: 80%;
+        font-family: 'Josefin Sans';
+    }
+    
+    .drawAnother {
+        background-color: salmon;
+        padding: 10px;
+        margin-top: 20px; /* Adjust this value as needed */
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        margin: 50px;
+    }
+    }
+
+/*Styles for screens smaller than 800px wide landscape orientation */
+@media (max-width: 799px) and (orientation: landscape) {
+.readingsCard {
+    background-image: url(beachstars.jpg);
+    background-clip: content-box;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 200px;
+    background-size: cover;
+    overflow: scroll;
+            }
+            
+.tarotcardreadingimage {
+    position: relative;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+        
+.tarotcardreadingimage img{
+    height: 85vh;
+    }
+            
+.cardDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5%; /* Adjust this value as needed */
+    }
+            
+.readingsDescription {
+    font-size: 40px;
+    color: violet;
+    line-height: 3rem;
+    font-weight: bold;
+    margin-left: 2%;
+    padding-left: 5px;
+    font-family: 'Josefin Sans';
+    }
+            
+.description {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    text-align: left;
+    background-color: skyblue;
+    padding: 20px;
+    margin-right: 30px;
+    background-blend-mode: screen;
+    opacity: 80%;
+    font-family: 'Josefin Sans';
+}
+            
+.drawAnother {
+    background-color: salmon;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+}
+
+/*Styles for portrait screens smaller than 500px wide portrait orientation */
+@media (max-width: 500px) and (orientation: portrait) {
+    .readingsCard {
+        background-image: url(beachstars.jpg);
+        background-clip: content-box;
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-y;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 400px;
+        overflow: scroll;
+        }
+                
+    .tarotcardreadingimage {
+        position: relative;
+        transition: transform 1s ease-in-out;
+        transform-style: preserve-3d;
+        margin-left: 30px;
+        margin-top: 30px;
+        }
+            
+    .tarotcardreadingimage img{
+        width: 80vw;
+        height: auto;
+        }
+                
+    .cardDetailsContainer {
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-start; /* Adjust this value as needed */
+        }
+                
+    .readingsDescription {
+        font-size: 30px;
+        color: violet;
+        line-height: 3rem;
+        font-weight: bold;
+        margin-left: 5%;
+        padding-left: 5px;
+        font-family: 'Josefin Sans';
+        }
+                
+    .description {
+        font-size: 15px;
+        color: #000000;
+        font-weight: 400;
+        text-align: left;
+        background-color: skyblue;
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 10%;
+        background-blend-mode: screen;
+        opacity: 80%;
+        font-family: 'Josefin Sans';
+    }
+                
+    .drawAnother {
+        background-color: salmon;
+        padding: 10px;
+        margin-left: 5%;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+/*Styles for portrait screens larger than 500px wide portrait orientation */
+@media (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) {
+.readingsCard {
+    background-image: url(beachstars.jpg);
+    background-clip: content-box;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
+    overflow: scroll;
+}
+                
+.tarotcardreadingimage {
+    position: relative;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    margin-top: 30px;
+    align-self: center;
+}
+            
+.tarotcardreadingimage img{
+    width: 80vw;
+    height: auto;
+}
+                
+.cardDetailsContainer {
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start; /* Adjust this value as needed */
+}
+                
+.readingsDescription {
+    font-size: 30px;
+    color: violet;
+    line-height: 3rem;
+    font-weight: bold;
+    margin-left: 5%;
+    padding-left: 5px;
+    font-family: 'Josefin Sans';
+    }
+                
+.description {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    text-align: left;
+    background-color: skyblue;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 10%;
+    background-blend-mode: screen;
+    opacity: 80%;
+    font-family: 'Josefin Sans';
+}
+                
+.drawAnother {
+    background-color: salmon;
+    padding: 10px;
+    margin-left: 5%;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+}
+        
 
 /*EndofSection4*/
 /*StartofFinalSection*/
