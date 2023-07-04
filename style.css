@@ -8,6 +8,17 @@
     --white: #FFFFFF;
     --black: #000000;
 }  
+
+.body {
+    font-size: 20px;
+    font-family: 'josefin Sans';
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
   /*Introduction*/
 /* Styles for landscape screens wider than 2000px */
 @media (min-width: 2000px) and (orientation: landscape)  {
@@ -85,7 +96,7 @@
 
 .h1 {
     font-size: 80px;
-    color: rgb(249, 33, 119);
+    color: white;
     text-shadow: 30px, 30px, 30px, black;
     line-height: 8rem;
     font-family: 'Josefin Sans';
@@ -189,8 +200,8 @@
     }
 
 .h1 {
-    font-size: 50px;
-    color: rgb(13, 53, 80);
+    font-size: 45px;
+    color: white;
     text-shadow: 30px, 30px, 30px, black;
     line-height: 5rem;
     font-family: 'Josefin Sans';
@@ -375,15 +386,15 @@
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        margin: 5% auto;
+        width: 100%;
+        overflow: scroll;
           }
   
 .introimage {
     display: flex;
     align-self: center;
     width: 90%; /* Adjusted */
-    margin-top: -20%;
+    margin-top: 5px;
     position: absolute;
 
           }
@@ -396,7 +407,6 @@
 .introcontent{
           align-content: center;
           align-items: center;
-          margin-left: 5%;
           margin-bottom: 50px;
           position: absolute;
       }
@@ -405,11 +415,13 @@
           text-shadow: 10px 10px 10px grey;
           align-items: center;
           opacity: 0;
+          margin-top: 100px;
           }
       
 .h1 {
           font-size: 25px;
           color: white;
+          margin-top: 140px;
           text-shadow: 5px, 5px, 5px, black;
           line-height: 2.5rem;
           text-align: center;
@@ -433,7 +445,7 @@
           font-size: 20px;
           color: white;
           box-shadow: 30px, 30px, 30px, black;
-          margin-top: 5%;
+          
       }
   
       .about{
@@ -524,12 +536,13 @@
               }
           
 .h1 {
-              font-size: 45px;
+              font-size: 30px;
               color: white;
               text-shadow: 5px, 5px, 5px, black;
-              line-height: 4.5rem;
+              line-height: 3rem;
               text-align: center;
               font-family: 'Josefin Sans';
+              margin-top: 15px;
               }
           
 .introbuttons {
@@ -2814,17 +2827,17 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 100px; /* Adjust this value as needed */
+        margin-top: 30px; /* Adjust this value as needed */
     }
     
     .readingsDescription {
-        font-size: 70px;
+        font-size: 40px;
         color: violet;
-        line-height: 6rem;
+        line-height: 4rem;
         font-weight: bold;
-        margin-top: 60px;
-        margin-left: 350 px;
-        padding-left: 50px;
+        margin-bottom: 10px;
+        margin-left: 340 px;
+        padding-left: 40px;
         font-family: 'Josefin Sans';
     }
     
@@ -2845,11 +2858,11 @@
     
     .drawAnother {
         background-color: salmon;
-        padding: 20px;
-        margin-top: 20px; /* Adjust this value as needed */
+        padding: 10px;
+        margin-top: 10px; /* Adjust this value as needed */
         font-family: 'Josefin Sans';
         font-weight: 400;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         margin: 50px;
     }
@@ -2993,7 +3006,7 @@
 }
 
 /*Styles for portrait screens smaller than 500px wide portrait orientation */
-@media (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 499px) and (orientation: portrait) {
     .readingsCard {
         background-image: url(beachstars.jpg);
         background-clip: content-box;
@@ -3022,7 +3035,8 @@
     .cardDetailsContainer {
         position: relative;
         justify-content: flex-start;
-        align-items: flex-start; /* Adjust this value as needed */
+        align-items: flex-start;
+        background-color: skyblue; /* Adjust this value as needed */
         }
                 
     .readingsDescription {
@@ -3030,9 +3044,11 @@
         color: violet;
         line-height: 3rem;
         font-weight: bold;
+        margin-top: 100px;
         margin-left: 5%;
         padding-left: 5px;
         font-family: 'Josefin Sans';
+        background-color: skyblue;
         }
                 
     .description {
@@ -3042,6 +3058,7 @@
         text-align: left;
         background-color: skyblue;
         padding: 20px;
+        margin-top: 20px;
         margin-left: 5%;
         margin-right: 10%;
         background-blend-mode: screen;
