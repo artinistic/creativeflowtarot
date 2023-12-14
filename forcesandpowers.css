@@ -42,7 +42,7 @@ html {
     padding-top: 10px;
     box-sizing: border-box;
     align-content: center;
-    overflow: visible;
+    overflow: scroll;
 }
 
 #introcards {
@@ -152,7 +152,7 @@ html {
     align-items: center;
     margin-bottom: 300px;
     padding: 10rem 0;
-    overflow: visible;
+    overflow: scroll;
 }
 
 .section1-heading {
