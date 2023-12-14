@@ -993,16 +993,7 @@ html {
         overflow:scroll;
         background-size: cover;
         grid-template-rows: 20%, 80%;
-        opacity: 0;
-        transition: opacity 0.5s;
-        display: none; 
-
-        }
-
-.visible {
-            opacity: 1;
-            display: flex; /* Show the section when the 'visible' class is applied */
-          }
+}
 
           .shufflesceneheader {
         margin: 20px;

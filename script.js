@@ -1,11 +1,3 @@
-const focusButton = document.getElementById('focusButton');
-const targetSection = document.getElementById('section7');
-
-focusButton.addEventListener('click', function() {
-  // Toggle the 'visible' class on the target section
-  targetSection.classList.toggle('visible');
-});
-
 // Function to get a random card image from the list
     function getRandomCardImage() {
         const cardImages = [
