@@ -1,45 +1,83 @@
 // Function to get a random card image from the list
     function getRandomCardImage() {
         const cardImages = [
-            '/images/wands/aceofwands.jpg', '/images/wands/twoofwands.jpg', 
-            '/images/wands/threeofwands.jpg', '/images/wands/fourofwands.jpg', 
-            '/images/wands/fiveofwands.jpg', '/images/wands/sixofwands.jpg', 
-            '/images/wands/sevenofwands.jpg', '/images/wands/eightofwands.jpg',
-            '/images/wands/nineofwands.jpg', '/images/wands/tenofwands.jpg', 
-            '/images/wands/spiritofwands.jpg', '/images/wands/knightofwands.jpg', 
-            '/images/wands/goddessofwands.jpg', '/images/wands/godofwands.jpg',
-            '/images/stars/aceofstars.jpg', '/images/stars/twoofstars.jpg', 
-            '/images/stars/threeofstars.jpg', '/images/stars/fourofstars.jpg', 
-            '/images/stars/fiveofstars.jpg', '/images/stars/sixofstars.jpg', 
-            '/images/stars/sevenofstars.jpg', '/images/stars/eightofstars.jpg',
-            '/images/stars/nineofstars.jpg', '/images/stars/tenofstars.jpg', 
-            '/images/stars/spiritofstars.jpg', '/images/stars/knightofstars.jpg', 
-            '/images/stars/goddessofstars.jpg', '/images/stars/godofstars.jpg',
-            '/images/stones/aceofstones.jpg', '/images/stones/twoofstones.jpg', 
-            '/images/stones/threeofstones.jpg', '/images/stones/fourofstones.jpg', 
-            '/images/stones/fiveofstones.jpg', '/images/stones/sixofstones.jpg', 
-            '/images/stones/sevenofstones.jpg', '/images/stones/eightofstones.jpg',
-            '/images/stones/nineofstones.jpg', '/images/stones/tenofstones.jpg', 
-            '/images/stones/spiritofstones.jpg', '/images/stones/knightofstones.jpg', 
-            '/images/stones/goddessofstones.jpg', '/images/stones/godofstones.jpg',
-            '/images/swords/aceofswords.jpg', '/images/swords/twoofswords.jpg', 
-            '/images/swords/threeofswords.jpg', '/images/swords/fourofswords.jpg', 
-            '/images/swords/fiveofswords.jpg', '/images/swords/sixofswords.jpg', 
-            '/images/swords/sevenofswords.jpg', '/images/swords/eightofswords.jpg',
-            '/images/swords/nineofswords.jpg', '/images/swords/tenofswords.jpg', 
-            '/images/swords/spiritofswords.jpg', '/images/swords/knightofswords.jpg', 
-            '/images/swords/goddessofswords.jpg', '/images/swords/godofswords.jpg',
-            '/images/forces/1-theinnerchild.jpg', '/images/forces/2-ImaginationStation.jpg', 
-            '/images/forces/3-MindsEye.jpg', '/images/forces/4-MotherNature.jpg', 
-            '/images/forces/5-TheMoonTarotCard.jpg', '/images/forces/6-TheMessenger.jpg', 
-            '/images/forces/7-TheLovers.jpg', '/images/forces/8-PurposetheCreators.jpg',
-            '/images/forces/9-TheHermitStarryEyedSloth.jpg', '/images/forces/10-WindsofFortune.jpg', 
-            '/images/forces/11-Justice.jpg', '/images/forces/12-HangManhero.jpg', 
-            '/images/forces/13-Death.jpg', '/images/forces/14-Harmony.jpg',
+            '/images/wands/aceofwands.jpg', 
+            '/images/wands/twoofwands.jpg', 
+            '/images/wands/threeofwands.jpg', 
+            '/images/wands/fourofwands.jpg', 
+            '/images/wands/fiveofwands.jpg', 
+            '/images/wands/sixofwands.jpg', 
+            '/images/wands/sevenofwands.jpg', 
+            '/images/wands/eightofwands.jpg',
+            '/images/wands/nineofwands.jpg', 
+            '/images/wands/tenofwands.jpg', 
+            '/images/wands/spiritofwands.jpg', 
+            '/images/wands/knightofwands.jpg', 
+            '/images/wands/goddessofwands.jpg', 
+            '/images/wands/godofwands.jpg',
+            '/images/stars/aceofstars.jpg', 
+            '/images/stars/twoofstars.jpg', 
+            '/images/stars/threeofstars.jpg', 
+            '/images/stars/fourofstars.jpg', 
+            '/images/stars/fiveofstars.jpg', 
+            '/images/stars/sixofstars.jpg', 
+            '/images/stars/sevenofstars.jpg', 
+            '/images/stars/eightofstars.jpg',
+            '/images/stars/nineofstars.jpg', 
+            '/images/stars/tenofstars.jpg', 
+            '/images/stars/spiritofstars.jpg', 
+            '/images/stars/knightofstars.jpg', 
+            '/images/stars/goddessofstars.jpg', 
+            '/images/stars/godofstars.jpg',
+            '/images/stones/aceofstones.jpg', 
+            '/images/stones/twoofstones.jpg', 
+            '/images/stones/threeofstones.jpg', 
+            '/images/stones/fourofstones.jpg', 
+            '/images/stones/fiveofstones.jpg', 
+            '/images/stones/sixofstones.jpg', 
+            '/images/stones/sevenofstones.jpg', 
+            '/images/stones/eightofstones.jpg',
+            '/images/stones/nineofstones.jpg', 
+            '/images/stones/tenofstones.jpg', 
+            '/images/stones/spiritofstones.jpg', 
+            '/images/stones/knightofstones.jpg', 
+            '/images/stones/goddessofstones.jpg', 
+            '/images/stones/godofstones.jpg',
+            '/images/swords/aceofswords.jpg', 
+            '/images/swords/twoofswords.jpg', 
+            '/images/swords/threeofswords.jpg', 
+            '/images/swords/fourofswords.jpg', 
+            '/images/swords/fiveofswords.jpg', 
+            '/images/swords/sixofswords.jpg', 
+            '/images/swords/sevenofswords.jpg', 
+            '/images/swords/eightofswords.jpg',
+            '/images/swords/nineofswords.jpg', 
+            '/images/swords/tenofswords.jpg', 
+            '/images/swords/spiritofswords.jpg', 
+            '/images/swords/knightofswords.jpg', 
+            '/images/swords/goddessofswords.jpg', 
+            '/images/swords/godofswords.jpg',
+            '/images/forces/1-theinnerchild.jpg', 
+            '/images/forces/2-ImaginationStation.jpg', 
+            '/images/forces/3-MindsEye.jpg', 
+            '/images/forces/4-MotherNature.jpg', 
+            '/images/forces/5-TheMoonTarotCard.jpg', 
+            '/images/forces/6-TheMessenger.jpg', 
+            '/images/forces/7-TheLovers.jpg', 
+            '/images/forces/8-PurposetheCreators.jpg',
+            '/images/forces/9-TheHermitStarryEyedSloth.jpg', 
+            '/images/forces/10-WindsofFortune.jpg', 
+            '/images/forces/11-Justice.jpg', 
+            '/images/forces/12-HangManhero.jpg', 
+            '/images/forces/13-Death.jpg', 
+            '/images/forces/14-Harmony.jpg',
             '/images/forces/15-Strength.jpg',
-            '/images/forces/16-Judgment.jpg', '/images/forces/17-Devil.jpg', 
-            '/images/forces/18-Destruction.jpg', '/images/forces/19-TheLightningStorm.jpg', 
-            '/images/forces/21-Constellations.jpg', '/images/forces/22-WorldMultiverse.jpg', 
+            '/images/forces/16-Judgment.jpg', 
+            '/images/forces/17-Devil.jpg', 
+            '/images/forces/18-Destruction.jpg', 
+            '/images/forces/19-TheLightningStorm.jpg', 
+            '/images/forces/21-Constellations.jpg', 
+            '/images/forces/22-WorldMultiverse.jpg', 
             '/images/forces/20-TheSun.jpg',
             // ... (repeat for each card)
         ];
@@ -52,7 +90,7 @@
         const topCard = pile.querySelector('.card');
 
         // Change the card image with 60% scale
-        topCard.innerHTML = `<img style="width: 50%" src="${getRandomCardImage()}" alt="Tarot Card">`;
+        topCard.innerHTML = `<img style="width: 100%" src="${getRandomCardImage()}" alt="Tarot Card">`;
 
     }
 
@@ -136,6 +174,20 @@ setInterval(() => {
 }, 500)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function pileWands() {
     // Select all the wand icons within the .wands-icons container
     var wandIcons = document.querySelectorAll('.wands-icons i img'); // Update the selector
@@ -166,7 +218,7 @@ function pileWands() {
     var navigation = document.querySelector('.section2-navigation');
      navigation.style.transition = 'bottom 1s ease';
     navigation.style.position = 'relative';
-    navigation.style.bottom = '-' + (wandIcons.length * 20) + 'px'; // Adjust as needed for spacing
+    navigation.style.bottom = '-' + (wandIcons.length * 25) + 'px'; // Adjust as needed for spacing
 
 }
 
@@ -175,6 +227,7 @@ function resetwandRotation() {
     wandIcons.forEach(function (icon) {
         icon.style.transform = 'rotate(0deg)';
     });}
+
 
 
 function pileStars() {
@@ -403,6 +456,7 @@ function gatherCards() {
     // Calculate the card position based on the angle and radius
     const offsetX = centerX + radius * Math.cos(angle) - card.clientWidth / 2;
     const offsetY = centerY + radius * Math.sin(angle) - card.clientHeight / 2;
+
                   
     // Apply the position and rotation to the card
     card.style.position = 'absolute';
