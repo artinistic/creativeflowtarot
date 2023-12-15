@@ -119,7 +119,7 @@
 
     piles.forEach(pile => {
         // Create initial card for each pile
-        pile.innerHTML += `<div class="card"><img style="width: 50%" src="${getRandomCardImage()}" alt="Tarot Card"></div>`;
+        pile.innerHTML += `<div class="card"><img style="width: 100%" src="${getRandomCardImage()}" alt="Tarot Card"></div>`;
     });  
 
 
@@ -424,6 +424,7 @@ function shuffleCards() {
     card.style.left = `${offsetX}px`;
     card.style.top = `${offsetY}px`;
     card.style.transform = `translateZ(${translateZ}px) rotate(${rotation}deg)`;
+    card.style.zIndex = Math.floor(Math.random() * 100);
     card.style.transition = '1s';
                   
     // Add event listeners for hover and click
@@ -457,12 +458,15 @@ function gatherCards() {
     const offsetX = centerX + radius * Math.cos(angle) - card.clientWidth / 2;
     const offsetY = centerY + radius * Math.sin(angle) - card.clientHeight / 2;
 
-                  
+    // Generate random position along the Z-axis
+    const translateZ = Math.floor(Math.random() * 200) - 100; // Range: -100 to 100
+    
+
     // Apply the position and rotation to the card
     card.style.position = 'absolute';
     card.style.left = `${offsetX}px`;
     card.style.top = `${offsetY}px`;
-    card.style.transform = `rotate(${angle}rad)`;
+    card.style.transform = `rotate(${angle}rad) translateZ(${translateZ}px)`;
     card.style.transition = '1s';
                   
     // Add event listeners for hover and click
