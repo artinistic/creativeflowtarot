@@ -222,31 +222,6 @@ html {
     height: 40px;
 }
 
-.inline-video {
-    float: center !important;
-    width: auto !important;
-    max-width: 300px !important;
-    height: 600px !important;
-    margin: 0 2rem 1rem 0 !important;
-    border-radius: 8px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    display: block !important;
-}
-
-
-@media (max-width: 1600px) {
-    .inline-video {
-        float: center !important;
-        width: auto !important;
-        max-width: 300px !important;
-        height: 600px !important;
-        margin: 2rem auto 1rem auto !important;
-        border-radius: 8px;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-        display: block !important;
-    }
-}
-
 .section1-heading {
     font-size: 5rem;
     line-height: 4rem;
