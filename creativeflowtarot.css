@@ -16,22 +16,6 @@ html {
 }
 
 /*End of Common Styles*/
-.banner-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#homepage,
-#seabirdssongs {
-    font-family: 'Kalnia';
-    font-size: 20;
-    font-weight: 400;
-    color: white;
-    background-color: hotpink;
-    padding: 10px;
-    margin: 5px;
-}
 
 
 .intro-video {
